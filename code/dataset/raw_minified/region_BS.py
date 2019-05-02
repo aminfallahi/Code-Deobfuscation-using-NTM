@@ -1,0 +1,7 @@
+'Auto-generated file, do not edit by hand. BS metadata'
+F='1'
+E='\\d{7,10}'
+C='\\d{10}'
+A='NA'
+from phonenumbers.phonemetadata import NumberFormat,PhoneNumberDesc as B,PhoneMetadata as D
+G=D(id='BS',country_code=1,international_prefix='011',general_desc=B(national_number_pattern='(242|8(00|66|77|88)|900)\\d{7}',possible_number_pattern=E),fixed_line=B(national_number_pattern='242(?:3(?:02|[236][1-9]|4[0-24-9]|5[0-68]|7[3-57]|9[2-5])|4(?:2[237]|51|64|77)|502|636|702)\\d{4}',possible_number_pattern=E),mobile=B(national_number_pattern='242(357|359|457|557)\\d{4}',possible_number_pattern=C),toll_free=B(national_number_pattern='8(00|66|77|88)\\d{7}',possible_number_pattern=C),premium_rate=B(national_number_pattern='900\\d{7}',possible_number_pattern=C),shared_cost=B(national_number_pattern=A,possible_number_pattern=A),personal_number=B(national_number_pattern=A,possible_number_pattern=A),voip=B(national_number_pattern=A,possible_number_pattern=A),pager=B(national_number_pattern=A,possible_number_pattern=A),uan=B(national_number_pattern=A,possible_number_pattern=A),voicemail=B(national_number_pattern=A,possible_number_pattern=A),no_international_dialling=B(national_number_pattern=A,possible_number_pattern=A),national_prefix=F,national_prefix_for_parsing=F)

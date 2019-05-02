@@ -1,0 +1,1 @@
+def A(qibuild_action,toolchains,record_messages):E='bar';D='add-config';C='foo';B=record_messages;A=qibuild_action;toolchains.create(C);A(D,C,'--toolchain',C);A(D,E,'--profile',E);B.reset();A('list-configs');from qisys import ui;assert B.find('foo\n  toolchain: foo');assert B.find('bar\n  profiles: bar')

@@ -1,0 +1,1 @@
+def A(address):'Returns the DC quadrant for the address given';return[A for A in address.split(' ')if A in['NW','NE','SW','SE']]or None

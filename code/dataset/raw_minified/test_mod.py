@@ -1,0 +1,2 @@
+import mercantile as C,rasterio,mbtiles as B
+def A(data):B.init_worker(str(data.join('RGB.byte.tif')),{'driver':'PNG','dtype':'uint8','nodata':0,'height':256,'width':256,'count':3,'crs':'EPSG:3857'});A,D=B.process_tile(C.Tile(36,73,7));assert A.x==36;assert A.y==73;assert A.z==7

@@ -1,0 +1,1 @@
+"Helper functions\n\nConsists of functions to typically be used within templates, but also\navailable to Controllers. This module is available to both as 'h'.\n"

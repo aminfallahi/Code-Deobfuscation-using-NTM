@@ -1,0 +1,1 @@
+def A(request,response):A='PASS';return(202,'Giraffe'),[('Content-Type','text/html'),('X-Test',A)],A

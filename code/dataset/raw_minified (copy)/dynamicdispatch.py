@@ -1,0 +1,2 @@
+'\nscrapple.utils.dynamicdispatch\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nFunctions related to dynamic dispatch of objects\n'
+def get_command_class(command):'\n    Called from runCLI() to select the command class for the selected command.\n\n    :param command: The command to be implemented\n    :return: The command class corresponding to the selected command\n    ';from scrapple.commands import genconfig,generate,run,web;cmdClass=getattr(eval(command),command.title()+'Command');return cmdClass

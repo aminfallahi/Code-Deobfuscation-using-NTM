@@ -1,0 +1,6 @@
+'Auto-generated file, do not edit by hand. YT metadata'
+E='0'
+C='\\d{9}'
+A='NA'
+from phonenumbers.phonemetadata import NumberFormat,PhoneNumberDesc as B,PhoneMetadata as D
+F=D(id='YT',country_code=262,international_prefix='00',general_desc=B(national_number_pattern='[268]\\d{8}',possible_number_pattern=C),fixed_line=B(national_number_pattern='2696[0-4]\\d{4}',possible_number_pattern=C,example_number='269601234'),mobile=B(national_number_pattern='639\\d{6}',possible_number_pattern=C,example_number='639123456'),toll_free=B(national_number_pattern='80\\d{7}',possible_number_pattern=C,example_number='801234567'),premium_rate=B(national_number_pattern=A,possible_number_pattern=A),shared_cost=B(national_number_pattern=A,possible_number_pattern=A),personal_number=B(national_number_pattern=A,possible_number_pattern=A),voip=B(national_number_pattern=A,possible_number_pattern=A),pager=B(national_number_pattern=A,possible_number_pattern=A),uan=B(national_number_pattern=A,possible_number_pattern=A),voicemail=B(national_number_pattern=A,possible_number_pattern=A),no_international_dialling=B(national_number_pattern=A,possible_number_pattern=A),national_prefix=E,national_prefix_for_parsing=E,leading_digits='269|639')

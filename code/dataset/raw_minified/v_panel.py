@@ -1,0 +1,1 @@
+class A:CLICK_EVENT_IDENTIFIER='click'

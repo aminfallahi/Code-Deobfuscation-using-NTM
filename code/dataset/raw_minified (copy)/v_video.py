@@ -1,0 +1,1 @@
+class A:ATTR_POSTER='poster'

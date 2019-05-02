@@ -1,0 +1,1 @@
+def A():import flask_appconfig

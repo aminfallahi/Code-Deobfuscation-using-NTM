@@ -1,0 +1,1 @@
+def A(qipy_action,record_messages):B=record_messages;A=qipy_action;A.add_test_project('a_lib');A.add_test_project('big_project');A.add_test_project('foomodules');A('list');assert B.find('\\*\\s+a');assert B.find('\\*\\s+big_project')

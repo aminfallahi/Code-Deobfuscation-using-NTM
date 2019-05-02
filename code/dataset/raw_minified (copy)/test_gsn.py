@@ -1,0 +1,1 @@
+'\nNo tests for now, but there is an example of use in\npylearn2/scripts/gsn_example.py\n'

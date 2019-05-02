@@ -1,0 +1,1 @@
+def A(qisrc_action,git_server,record_messages):D='spam';C=qisrc_action;B=record_messages;A=git_server;A.create_group('default',['foo','bar'],default=True);A.create_group(D,[D,'eggs']);C('init',A.manifest_url);B.reset();C('list-groups');assert B.find('\\* default');assert B.find(' spam')

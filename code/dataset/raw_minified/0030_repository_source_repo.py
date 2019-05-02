@@ -1,0 +1,3 @@
+from __future__ import unicode_literals
+from django.db import models as B,migrations as A
+class C(A.Migration):dependencies=[('base','0029_repository_multi_locale')];operations=[A.AddField(model_name='repository',name='source_repo',field=B.BooleanField(default=False,help_text=b'\n        If true, this repo contains the source strings directly in the\n        root of the repo. Checkouts of this repo will have "en-US"\n        appended to the end of their path so that they are detected as\n        source directories.\n    '))]

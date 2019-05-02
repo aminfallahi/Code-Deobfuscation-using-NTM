@@ -1,0 +1,1 @@
+def A(x):return x+1

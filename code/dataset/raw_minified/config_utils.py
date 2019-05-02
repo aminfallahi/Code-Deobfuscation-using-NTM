@@ -1,0 +1,1 @@
+def A(cmd):return ' '.join(['nohup',cmd,'< /dev/null > std.out 2> std.err &'])

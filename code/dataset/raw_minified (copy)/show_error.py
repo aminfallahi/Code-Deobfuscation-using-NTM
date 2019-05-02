@@ -1,0 +1,2 @@
+import sublime as A
+def B(string):'\n    Displays an error message with a standard "Package Control" header\n\n    :param string:\n        The error to display\n    ';A.error_message('Package Control\n\n%s'%string)

@@ -1,0 +1,7 @@
+'Auto-generated file, do not edit by hand. IM metadata'
+F='0'
+E='\\d{6,10}'
+C='NA'
+B='\\d{10}'
+from ..phonemetadata import NumberFormat,PhoneNumberDesc as A,PhoneMetadata as D
+G=D(id='IM',country_code=44,international_prefix='00',general_desc=A(national_number_pattern='[135789]\\d{6,9}',possible_number_pattern=E),fixed_line=A(national_number_pattern='1624\\d{6}',possible_number_pattern=E,example_number='1624456789'),mobile=A(national_number_pattern='7[569]24\\d{6}',possible_number_pattern=B,example_number='7924123456'),toll_free=A(national_number_pattern='808162\\d{4}',possible_number_pattern=B,example_number='8081624567'),premium_rate=A(national_number_pattern='(?:872299|90[0167]624)\\d{4}',possible_number_pattern=B,example_number='9016247890'),shared_cost=A(national_number_pattern='8(?:4(?:40[49]06|5624\\d)|70624\\d)\\d{3}',possible_number_pattern=B,example_number='8456247890'),personal_number=A(national_number_pattern='70\\d{8}',possible_number_pattern=B,example_number='7012345678'),voip=A(national_number_pattern='56\\d{8}',possible_number_pattern=B,example_number='5612345678'),pager=A(national_number_pattern=C,possible_number_pattern=C),uan=A(national_number_pattern='3(?:08162\\d|3\\d{5}|4(?:40[49]06|5624\\d)|7(?:0624\\d|2299\\d))\\d{3}|55\\d{8}',possible_number_pattern=B,example_number='5512345678'),voicemail=A(national_number_pattern=C,possible_number_pattern=C),no_international_dialling=A(national_number_pattern=C,possible_number_pattern=C),national_prefix=F,preferred_extn_prefix=' x',national_prefix_for_parsing=F)

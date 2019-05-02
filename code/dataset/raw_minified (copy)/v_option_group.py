@@ -1,0 +1,1 @@
+class A:HTML_CONTENT_ALLOWED='usehtml'

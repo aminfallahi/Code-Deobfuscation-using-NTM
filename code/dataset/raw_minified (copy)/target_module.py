@@ -1,0 +1,2 @@
+A='DEFAULT'
+B='SPECIFIED'

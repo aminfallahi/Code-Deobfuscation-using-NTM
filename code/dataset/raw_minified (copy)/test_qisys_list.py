@@ -1,0 +1,1 @@
+def A(qisys_action,record_messages):E='a_proj';B=record_messages;A=qisys_action;C=A.worktree;F=C.tmpdir;G=C.create_project(E);D=F.join(E);D.join('qiproject.xml').write('\n<project format="3">\n  <project src="b_proj" />\n</project>\n');H=D.mkdir('b_proj');A('list');assert B.find(E);assert B.find('a_proj/b_proj')

@@ -1,0 +1,7 @@
+'Auto-generated file, do not edit by hand. PL metadata'
+G='0'
+F='[1-9]\\d{8}'
+C='\\d{9}'
+A='NA'
+from phonenumbers.phonemetadata import NumberFormat as D,PhoneNumberDesc as B,PhoneMetadata as E
+H=E(id='PL',country_code=48,international_prefix='00',general_desc=B(national_number_pattern=F,possible_number_pattern=C),fixed_line=B(national_number_pattern=F,possible_number_pattern=C),mobile=B(national_number_pattern='(?:5[01]|6[069]|7[289]|88)\\d{7}',possible_number_pattern=C),toll_free=B(national_number_pattern='800\\d{6}',possible_number_pattern=C),premium_rate=B(national_number_pattern='70\\d{7}',possible_number_pattern=C),shared_cost=B(national_number_pattern=A,possible_number_pattern=A),personal_number=B(national_number_pattern=A,possible_number_pattern=A),voip=B(national_number_pattern=A,possible_number_pattern=A),pager=B(national_number_pattern=A,possible_number_pattern=A),uan=B(national_number_pattern=A,possible_number_pattern=A),voicemail=B(national_number_pattern=A,possible_number_pattern=A),no_international_dialling=B(national_number_pattern=A,possible_number_pattern=A),national_prefix=G,national_prefix_for_parsing=G,number_format=[D(pattern='(\\d{2})(\\d{3})(\\d{2})(\\d{2})',format='\\1 \\2 \\3 \\4',national_prefix_formatting_rule='0\\1')])

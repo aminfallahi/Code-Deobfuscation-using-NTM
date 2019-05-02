@@ -1,0 +1,1 @@
+def A(x,y):A=x/y;return A+2.0

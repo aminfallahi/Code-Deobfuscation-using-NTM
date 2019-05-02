@@ -1,0 +1,1 @@
+def map(key,value):B='20090605';C={'fruit':'apple','producer':'del monte','color':'red','size':'largeish'};A={};A['seeds']=3;A['weight']=85;(yield(B,C,A))

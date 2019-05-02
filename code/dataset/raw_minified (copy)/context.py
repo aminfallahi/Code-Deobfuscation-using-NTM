@@ -1,0 +1,1 @@
+A="\n>>> from django.template import Context\n>>> c = Context({'a': 1, 'b': 'xyzzy'})\n>>> c['a']\n1\n>>> c.push()\n{}\n>>> c['a'] = 2\n>>> c['a']\n2\n>>> c.pop()\n{'a': 2}\n>>> c['a']\n1\n"

@@ -1,0 +1,1 @@
+class A(Exception):0

@@ -1,0 +1,4 @@
+from tests.commands_views import StartView as C,AuthorCommandView as B,AuthorInverseListView as D,AuthorCommandQueryView as E,UnknownView as F,AuthorName as G,MessageView as H
+from telegrambot.handlers import command as A,unknown_command as I,regex,message as J
+from telegrambot.bot_views.decorators import login_required as K
+L=[A('start',C.as_command_view()),A('author_inverse',D.as_command_view()),A('author_query',E.as_command_view()),regex('^author_(?P<name>\\w+)',G.as_command_view()),A('author_auth',K(B.as_command_view())),A('author',B.as_command_view()),I(F.as_command_view()),J(H.as_command_view())]

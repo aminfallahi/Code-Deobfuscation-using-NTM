@@ -1,0 +1,2 @@
+from qisys.test.conftest import TestWorkTree as C
+def A(worktree):F='foo';B='GPL';A=worktree.create_project(F);assert A.license is None;A.license=B;assert A.license==B;D=C();E=D.get_project(F);assert E.license==B

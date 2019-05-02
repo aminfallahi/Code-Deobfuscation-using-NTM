@@ -1,0 +1,2 @@
+from iepy.data.models import Relation as B,EntityKind as A
+if __name__=='__main__':C=A.objects.get_or_create(name='PERSON')[0];D=A.objects.get_or_create(name='DATE')[0];B.objects.get_or_create(name='BIRTHDATE',left_entity_kind=C,right_entity_kind=D)

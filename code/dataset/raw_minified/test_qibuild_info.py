@@ -1,0 +1,2 @@
+from qisrc.test.conftest import git_server,qisrc_action
+def A(qibuild_action,qisrc_action,git_server,record_messages):F='info';E='foo';C=git_server;B=qibuild_action;A=record_messages;C.create_repo('foo.git');qisrc_action('init',C.manifest_url);D=B.create_project(E);A.reset();B(F,E);assert A.find('src: foo');assert A.find('repo: foo.git');B.chdir(D.path);A.reset();B(F);assert A.find('Build project: foo')

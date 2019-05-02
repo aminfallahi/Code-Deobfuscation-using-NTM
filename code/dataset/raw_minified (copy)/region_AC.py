@@ -1,0 +1,5 @@
+'Auto-generated file, do not edit by hand. AC metadata'
+D='\\d{5}'
+A='NA'
+from ..phonemetadata import NumberFormat,PhoneNumberDesc as B,PhoneMetadata as C
+E=C(id='AC',country_code=247,international_prefix='00',general_desc=B(national_number_pattern='[46]\\d{4}|[01589]\\d{5}',possible_number_pattern='\\d{5,6}'),fixed_line=B(national_number_pattern='6[2-467]\\d{3}',possible_number_pattern=D,example_number='62889'),mobile=B(national_number_pattern='4\\d{4}',possible_number_pattern=D,example_number='40123'),toll_free=B(national_number_pattern=A,possible_number_pattern=A),premium_rate=B(national_number_pattern=A,possible_number_pattern=A),shared_cost=B(national_number_pattern=A,possible_number_pattern=A),personal_number=B(national_number_pattern=A,possible_number_pattern=A),voip=B(national_number_pattern=A,possible_number_pattern=A),pager=B(national_number_pattern=A,possible_number_pattern=A),uan=B(national_number_pattern='[01589]\\d{5}',possible_number_pattern='\\d{6}',example_number='542011'),voicemail=B(national_number_pattern=A,possible_number_pattern=A),no_international_dialling=B(national_number_pattern=A,possible_number_pattern=A))

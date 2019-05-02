@@ -1,0 +1,2 @@
+from graphql.core.execution import Executor as E,get_default_executor as A,set_default_executor as C
+def B():D=A();F=A();assert D is F;B=E();C(B);assert A()is B;C(None);assert A()is not D;assert A()is not B

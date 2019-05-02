@@ -1,0 +1,5 @@
+'Auto-generated file, do not edit by hand. NR metadata'
+C='\\d{7}'
+A='NA'
+from ..phonemetadata import NumberFormat as D,PhoneNumberDesc as B,PhoneMetadata as E
+F=E(id='NR',country_code=674,international_prefix='00',general_desc=B(national_number_pattern='[458]\\d{6}',possible_number_pattern=C),fixed_line=B(national_number_pattern='(?:444|888)\\d{4}',possible_number_pattern=C,example_number='4441234'),mobile=B(national_number_pattern='55[5-9]\\d{4}',possible_number_pattern=C,example_number='5551234'),toll_free=B(national_number_pattern=A,possible_number_pattern=A),premium_rate=B(national_number_pattern=A,possible_number_pattern=A),shared_cost=B(national_number_pattern=A,possible_number_pattern=A),personal_number=B(national_number_pattern=A,possible_number_pattern=A),voip=B(national_number_pattern=A,possible_number_pattern=A),pager=B(national_number_pattern=A,possible_number_pattern=A),uan=B(national_number_pattern=A,possible_number_pattern=A),voicemail=B(national_number_pattern=A,possible_number_pattern=A),no_international_dialling=B(national_number_pattern=A,possible_number_pattern=A),number_format=[D(pattern='(\\d{3})(\\d{4})',format='\\1 \\2')])

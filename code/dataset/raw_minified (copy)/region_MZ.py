@@ -1,0 +1,6 @@
+'Auto-generated file, do not edit by hand. MZ metadata'
+F='\\1 \\2 \\3'
+E='\\d{9}'
+A='NA'
+from ..phonemetadata import NumberFormat as C,PhoneNumberDesc as B,PhoneMetadata as D
+G=D(id='MZ',country_code=258,international_prefix='00',general_desc=B(national_number_pattern='[28]\\d{7,8}',possible_number_pattern='\\d{8,9}'),fixed_line=B(national_number_pattern='2(?:[1346]\\d|5[0-2]|[78][12]|93)\\d{5}',possible_number_pattern='\\d{8}',example_number='21123456'),mobile=B(national_number_pattern='8[23467]\\d{7}',possible_number_pattern=E,example_number='821234567'),toll_free=B(national_number_pattern='800\\d{6}',possible_number_pattern=E,example_number='800123456'),premium_rate=B(national_number_pattern=A,possible_number_pattern=A),shared_cost=B(national_number_pattern=A,possible_number_pattern=A),personal_number=B(national_number_pattern=A,possible_number_pattern=A),voip=B(national_number_pattern=A,possible_number_pattern=A),pager=B(national_number_pattern=A,possible_number_pattern=A),uan=B(national_number_pattern=A,possible_number_pattern=A),voicemail=B(national_number_pattern=A,possible_number_pattern=A),no_international_dialling=B(national_number_pattern=A,possible_number_pattern=A),number_format=[C(pattern='([28]\\d)(\\d{3})(\\d{3,4})',format=F,leading_digits_pattern=['2|8[2-7]']),C(pattern='(80\\d)(\\d{3})(\\d{3})',format=F,leading_digits_pattern=['80'])])

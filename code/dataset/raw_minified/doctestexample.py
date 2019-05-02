@@ -1,0 +1,1 @@
+def A(a,b):"\n    Return a added to b.\n\n    >>> adder(1, 3)\n    3\n    >>> adder('a', 'b')\n    'ab'\n    >>> adder(1, 'b')\n    Traceback (most recent call last):\n    TypeError: unsupported operand type(s) for +: 'int' and 'str'\n    ";return a+b

@@ -1,0 +1,1 @@
+from social.backends.google import GoogleOAuth2 as A,GoogleOAuth as B,GoogleOpenId as C

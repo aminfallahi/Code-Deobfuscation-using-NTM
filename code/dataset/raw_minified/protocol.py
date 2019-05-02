@@ -1,0 +1,2 @@
+import json
+def A(key,tags,attributes):'Utility function for making a series key POST body, used mainly for\n    the series creation API endpoint.\n\n    :param string key: the series key\n    :rtype: string';return json.dumps({'key':key,'tags':tags,'attributes':attributes})

@@ -1,0 +1,15 @@
+B=True
+from terminal import log as A
+A.info('hello test')
+A.start('start a level')
+A.info('hell in a level')
+A.debug('debug info')
+A.verbose.info('will not print this')
+A.config(verbose=B)
+A.verbose.info('will print this')
+A.start('start second level')
+A.verbose.debug('hello debug')
+A.end()
+A.config(quiet=B)
+A.info('will not print')
+A.end('close a level')

@@ -1,19 +1,24 @@
-wordsFile=open("words","r")
-wordsStr=[]
-words=[]
-i=0
-for word in wordsFile:
-	wordActStr=bin(i)[2:].zfill(8)
-	wordsStr.append(word.strip())
-	wordAct=[]
-	for bit in wordActStr:
-		wordAct.append(int(bit))
-	words.append(wordAct)
-	i+=1
-#print(words)
-#print(wordsStr)
+def getAllWords():
+	wordsFile=open("tokens","r")
+	wordsStr=[]
+	words=[]
+	i=0
+	for word in wordsFile:
+		wordActStr=bin(i)[2:].zfill(15)
+		wordsStr.append(word.strip())
+		wordAct=[]
+		for bit in wordActStr:
+			wordAct.append(int(bit))
+		words.append(wordAct)
+		i+=1
+	return words,wordsStr
 
-f=open("3.mini.py","r")
+words,wordsStr=getAllWords()
+print(words[wordsStr.index("import")])
+exit()
+
+
+f=open("./raw/filter.py","r")
 fileWords=[]
 fileWordsStr=[]
 for line in f:

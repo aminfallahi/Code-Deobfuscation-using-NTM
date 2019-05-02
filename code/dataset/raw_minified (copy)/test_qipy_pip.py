@@ -1,0 +1,2 @@
+import os,qipy.parsers
+def A(qipy_action,args):E='jinja';A=qipy_action;A('bootstrap','--no-site-packages');C=qipy.parsers.get_python_worktree(args);D=C.venv_path;B=os.path.join(D,'lib','python2.7','site-packages',E);assert not os.path.exists(B);A('pip','install',E);assert os.path.exists(B)

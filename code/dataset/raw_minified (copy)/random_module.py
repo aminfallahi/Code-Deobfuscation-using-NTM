@@ -1,0 +1,11 @@
+import random as A,os,somelib as C
+B=A.random()
+B=A.randrange()
+B=A.randint()
+B=A.choice()
+B=A.uniform()
+B=A.triangular()
+D=os.urandom()
+D=A.SystemRandom()
+E=A()
+E=C.a.random()

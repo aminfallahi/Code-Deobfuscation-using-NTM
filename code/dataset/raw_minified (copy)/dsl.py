@@ -1,0 +1,1 @@
+'\nIntermediate representation for testapp quepy.\n'

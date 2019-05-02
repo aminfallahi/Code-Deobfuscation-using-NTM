@@ -1,0 +1,1 @@
+from substanced.folder.views import *

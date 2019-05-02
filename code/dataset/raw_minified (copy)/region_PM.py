@@ -1,0 +1,6 @@
+'Auto-generated file, do not edit by hand. PM metadata'
+F='0'
+C='\\d{6}'
+A='NA'
+from ..phonemetadata import NumberFormat as D,PhoneNumberDesc as B,PhoneMetadata as E
+G=E(id='PM',country_code=508,international_prefix='00',general_desc=B(national_number_pattern='[45]\\d{5}',possible_number_pattern=C),fixed_line=B(national_number_pattern='41\\d{4}',possible_number_pattern=C,example_number='411234'),mobile=B(national_number_pattern='55\\d{4}',possible_number_pattern=C,example_number='551234'),toll_free=B(national_number_pattern=A,possible_number_pattern=A),premium_rate=B(national_number_pattern=A,possible_number_pattern=A),shared_cost=B(national_number_pattern=A,possible_number_pattern=A),personal_number=B(national_number_pattern=A,possible_number_pattern=A),voip=B(national_number_pattern=A,possible_number_pattern=A),pager=B(national_number_pattern=A,possible_number_pattern=A),uan=B(national_number_pattern=A,possible_number_pattern=A),voicemail=B(national_number_pattern=A,possible_number_pattern=A),no_international_dialling=B(national_number_pattern=A,possible_number_pattern=A),national_prefix=F,national_prefix_for_parsing=F,number_format=[D(pattern='([45]\\d)(\\d{2})(\\d{2})',format='\\1 \\2 \\3',national_prefix_formatting_rule='0\\1')])

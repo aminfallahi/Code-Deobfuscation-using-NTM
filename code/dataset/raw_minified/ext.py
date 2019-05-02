@@ -1,0 +1,1 @@
+class A:'\n    The core extension component of glim. This class must\n    be extended to be registered in glim extension development.\n    The extension loader checks if the module of classes.\n    '

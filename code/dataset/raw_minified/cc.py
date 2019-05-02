@@ -1,0 +1,1 @@
+def A(ctx):B='cc';A=ctx;C=A.env;A.env['CC']=[B];A.env['CC_TGT_F']=['-c','-o'];A.env['CC_SRC_F']=[];A.env['CFLAGS']=[];A.env['CPPPATH']=[];A.env['CPPPATH_FMT']='-I%s';A.env['LINK']=[B];A.env['LINKFLAGS']=[];A.env['LIBS']=[];A.env['LIB_FMT']='-l%s';A.env['LIBDIR_FMT']='-L%s'

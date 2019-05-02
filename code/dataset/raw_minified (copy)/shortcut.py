@@ -1,0 +1,3 @@
+B=None
+from .request import Request as A
+def C(receipt_data,password=B,proxy_url=B,**B):'Shortcut API for :class:`itunesiap.request.Request`\n\n    :param str receipt_data: An iTunes receipt data as Base64 encoded string.\n    :param proxy_url: A proxy url to access the itunes validation url\n    :param bool use_production: Override environment value if given\n    :param bool use_sandbox: Override environment value if given\n    :param bool verify_ssl: Override environment value if given\n\n    :return: :class:`itunesiap.receipt.Receipt` object if succeed.\n    :raises: Otherwise raise a request exception.\n    ';return A(receipt_data,password,proxy_url).verify(**B)
