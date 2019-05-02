@@ -1,1 +1,0 @@
-s3db.load_all_models()

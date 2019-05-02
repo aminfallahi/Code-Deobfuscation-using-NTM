@@ -1,1 +1,0 @@
-from elementtidy.TidyHTMLTreeBuilder import *

@@ -1,2 +1,0 @@
-from __future__ import absolute_import,unicode_literals,division
-def A(resource,url):'\n    Perform a `read` request in the passed `resource` context against\n    the given `url`.\n\n    Returns what a `read` would return (the managed target item).\n    ';return resource._request_read(url)

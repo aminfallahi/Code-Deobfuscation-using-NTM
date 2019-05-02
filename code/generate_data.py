@@ -1,6 +1,7 @@
 import numpy as np
 from scipy import spatial
 import random
+import os
 
 def set_random_seed(seed):
     np.random.seed(seed)
@@ -10,6 +11,7 @@ snap_boolean = np.vectorize(lambda x: 1.0 if x > 0.5 else 0.0)
 class CopyTaskData:
     def generate_batches(self, num_batches, batch_size, bits_per_vector=8, curriculum_point=20, max_seq_len=20,
         curriculum='uniform', pad_to_max_seq_len=False):
+        return self._generate_batches(num_batches,batch_size)
         batches = []
         for i in range(num_batches):
             if curriculum == 'deterministic_uniform':
@@ -38,6 +40,51 @@ class CopyTaskData:
             full_inputs = np.concatenate((inputs, eos, output_inputs), axis=1)
 
             batches.append((pad_to_len, full_inputs, inputs[:, :, :bits_per_vector]))
+        #np.set_printoptions(threshold=np.inf)
+        #print(batches)
+        #exit()
+        return batches
+
+    def _generate_batches(self,num_batches,batch_size):
+        for nb in range(num_batches):
+            batchesInput=[]
+            batchesOutput=[]
+            m=0
+            files=os.listdir('./dataset/vectorized_raw_minified')
+            random.shuffle(files)
+            files=files[0:batch_size]
+            #input
+            for filename in files:
+                f=open('./dataset/vectorized_raw_minified/'+filename,"r")
+                inp=eval(f.read())
+                if len(inp)>m:
+                    m=len(inp)
+
+                for i in range(len(inp)):
+                    inp[i].append(0)
+                for i in range(128-len(inp)):
+                    inp.append([0]*len(inp[0]))
+                inp.append([1]*len(inp[0]))
+                for i in range(128):
+                    inp.append([0]*len(inp[0]))
+                batchesInput.append(inp)
+                f.close()
+            #output
+
+            m=0
+            for filename in files:
+                f=open('./dataset/vectorized_raw/'+filename,"r")
+                inp=eval(f.read())
+                if len(inp)>m:
+                    m=len(inp)
+                for i in range(128-len(inp)):
+                    inp.append([0]*len(inp[0]))
+                batchesOutput.append(inp)
+                f.close()
+
+            batches=[]
+            batches.append((128,np.asarray(batchesInput),np.asarray(batchesOutput)))
+            #pprint(batches[0][1])
         return batches
 
     def error_per_seq(self, labels, outputs, num_seq):

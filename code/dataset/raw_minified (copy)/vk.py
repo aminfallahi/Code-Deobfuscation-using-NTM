@@ -1,1 +1,0 @@
-from social.backends.vk import VKontakteOpenAPI as A,VKOAuth2 as B,VKAppOAuth2 as C

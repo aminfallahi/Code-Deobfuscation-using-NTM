@@ -1,3 +1,0 @@
-from __future__ import absolute_import
-from formencode.htmlrename import rename as B,add_prefix as A
-def C():C=True;assert B('<input type="text" name="a_name">',lambda name:name.upper())=='<input type="text" name="A_NAME">';assert A('<input type="text" name="a_name"><input type="text" name="">','test',dotted=C)=='<input type="text" name="test.a_name"><input type="text" name="test">';assert A('text<textarea name="a_name">value</textarea>text2','prefix.')=='text<textarea name="prefix.a_name">value</textarea>text2';assert A('<textarea name="" rows=2 style="width: 100%" id="field-0"></textarea>','street',dotted=C)=='<textarea name="street" rows="2" style="width: 100%" id="field-0"></textarea>'

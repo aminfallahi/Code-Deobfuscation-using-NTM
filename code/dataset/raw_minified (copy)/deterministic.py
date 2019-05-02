@@ -1,3 +1,0 @@
-' \npymodel configuration: remove nondeterminism, always send/recv entire message\n\nUse state-dependent domains to remove nondeterminism from socket model.\nThese domains ensure that send always accepts the entire send_arg,\nand recv always returns entire buffers.\n\nThis only works with import socket then socket.send_arg ... etc.\nThis does *not* work with from socket import send_arg ... etc.\n'
-import msocket as A
-A.domains.update({A.send_return:{'n':lambda:[len(A.send_arg)]},A.recv_return:{'msg':lambda:[A.buffers]}})

@@ -1,2 +1,0 @@
-from qibuild.test.conftest import TestBuildWorkTree as B
-def A(qilinguist_action,record_messages):A=record_messages;C=B();C.add_test_project('translateme/qt');qilinguist_action('list');assert A.find('\\*\\s+helloqt');assert A.find('\\*\\s+translate')

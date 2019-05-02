@@ -1,1 +1,0 @@
-def A(case,monkeypatch,pytestconfig):case.run()

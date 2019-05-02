@@ -1,2 +1,0 @@
-'\n********************************************************************************\n* Name: gizmos.py\n* Author: Nathan Swain\n* Created On: 7 August 2015\n* Copyright: (c) Brigham Young University 2015\n* License: BSD 2-Clause\n********************************************************************************\n'
-from tethys_gizmos.gizmo_options import *

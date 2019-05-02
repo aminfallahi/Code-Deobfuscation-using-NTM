@@ -1,1 +1,0 @@
-def A(build_worktree):B='world';A=build_worktree;C=A.add_test_project(B);assert A.get_build_project(B)

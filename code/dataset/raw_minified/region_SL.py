@@ -1,6 +1,0 @@
-'Auto-generated file, do not edit by hand. SL metadata'
-F='0'
-C='\\d{6,8}'
-A='NA'
-from ..phonemetadata import NumberFormat as D,PhoneNumberDesc as B,PhoneMetadata as E
-G=E(id='SL',country_code=232,international_prefix='00',general_desc=B(national_number_pattern='[2-9]\\d{7}',possible_number_pattern=C),fixed_line=B(national_number_pattern='[235]2[2-4][2-9]\\d{4}',possible_number_pattern=C,example_number='22221234'),mobile=B(national_number_pattern='(?:2[15]|3[03-5]|4[04]|5[05]|66|7[6-9]|88|99)\\d{6}',possible_number_pattern=C,example_number='25123456'),toll_free=B(national_number_pattern=A,possible_number_pattern=A),premium_rate=B(national_number_pattern=A,possible_number_pattern=A),shared_cost=B(national_number_pattern=A,possible_number_pattern=A),personal_number=B(national_number_pattern=A,possible_number_pattern=A),voip=B(national_number_pattern=A,possible_number_pattern=A),pager=B(national_number_pattern=A,possible_number_pattern=A),uan=B(national_number_pattern=A,possible_number_pattern=A),voicemail=B(national_number_pattern=A,possible_number_pattern=A),no_international_dialling=B(national_number_pattern=A,possible_number_pattern=A),national_prefix=F,national_prefix_for_parsing=F,number_format=[D(pattern='(\\d{2})(\\d{6})',format='\\1 \\2',national_prefix_formatting_rule='(0\\1)')])

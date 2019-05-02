@@ -1,1 +1,0 @@
-class A:ATTR_DISABLE_ON_CLICK='dc'

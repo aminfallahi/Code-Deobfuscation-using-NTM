@@ -1,2 +1,0 @@
-import numpy as A
-def B(source_ds,target_width,target_height):'Returns x, y lists of all possible resampling offsets.\n\n    source_ds     - dataset to get offsets from\n    target_width  - target pixel width\n    target_height - target pixel height (negative)\n    ';B=source_ds;C=B.GetGeoTransform();F=C[1];G=C[5];D=target_width/F;E=target_height/G;H=A.arange(D/2,B.RasterXSize,D);I=A.arange(E/2,B.RasterYSize,E);return A.meshgrid(H,I)

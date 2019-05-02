@@ -1,1 +1,0 @@
-print('This is Some_Module from path1')

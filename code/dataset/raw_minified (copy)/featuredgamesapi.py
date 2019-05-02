@@ -1,2 +1,0 @@
-import cassiopeia.dto.requests,cassiopeia.type.dto.featuredgames
-def A():'\n    https://developer.riotgames.com/api/methods#!/977/3337\n\n    Returns:\n        FeaturedGames: the current featured game list\n    ';A='https://{server}.api.pvp.net/observer-mode/rest/featured'.format(server=cassiopeia.dto.requests.region);return cassiopeia.type.dto.featuredgames.FeaturedGames(cassiopeia.dto.requests.get(A,include_base=False))

@@ -15,7 +15,7 @@ parser = argparse.ArgumentParser()
 def str2bool(v):
     return v.lower() in ("yes", "true", "t", "1")
 
-parser.add_argument('--mann', type=str, default='none', help='none | ntm')
+parser.add_argument('--mann', type=str, default='ntm', help='none | ntm')
 parser.add_argument('--num_layers', type=int, default=1)
 parser.add_argument('--num_units', type=int, default=100)
 parser.add_argument('--num_memory_locations', type=int, default=128)
@@ -30,15 +30,15 @@ parser.add_argument('--optimizer', type=str, default='Adam', help='RMSProp | Ada
 parser.add_argument('--learning_rate', type=float, default=0.001)
 parser.add_argument('--max_grad_norm', type=float, default=50)
 parser.add_argument('--num_train_steps', type=int, default=31250)
-parser.add_argument('--batch_size', type=int, default=32)
+parser.add_argument('--batch_size', type=int, default=128)
 parser.add_argument('--eval_batch_size', type=int, default=640)
 
 parser.add_argument('--curriculum', type=str, default='none', help='none | uniform | naive | look_back | look_back_and_forward | prediction_gain')
 parser.add_argument('--pad_to_max_seq_len', type=str2bool, default=False)
 
 parser.add_argument('--task', type=str, default='copy', help='copy | associative_recall')
-parser.add_argument('--num_bits_per_vector', type=int, default=8)
-parser.add_argument('--max_seq_len', type=int, default=20)
+parser.add_argument('--num_bits_per_vector', type=int, default=15)
+parser.add_argument('--max_seq_len', type=int, default=128)
 
 parser.add_argument('--verbose', type=str2bool, default=True, help='if true prints lots of feedback')
 parser.add_argument('--experiment_name', type=str, required=True)
@@ -295,7 +295,8 @@ for i in range(args.num_train_steps):
         curriculum=args.curriculum,
         pad_to_max_seq_len=args.pad_to_max_seq_len
     )[0]
-
+    #print(seq_len)
+    #exit()
     train_loss, _, outputs = sess.run([model.loss, model.train_op, model.outputs],
         feed_dict={
             inputs_placeholder: inputs,

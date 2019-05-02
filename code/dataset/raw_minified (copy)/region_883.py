@@ -1,8 +1,0 @@
-'Auto-generated file, do not edit by hand. 883 metadata'
-H='510'
-G='\\1 \\2 \\3'
-F='\\d{9}(?:\\d{3})?'
-D='510012345'
-A='NA'
-from ..phonemetadata import NumberFormat as C,PhoneNumberDesc as B,PhoneMetadata as E
-I=E(id='001',country_code=883,international_prefix=None,general_desc=B(national_number_pattern='51\\d{7}(?:\\d{3})?',possible_number_pattern=F,example_number=D),fixed_line=B(national_number_pattern=A,possible_number_pattern=A,example_number=D),mobile=B(national_number_pattern=A,possible_number_pattern=A,example_number=D),toll_free=B(national_number_pattern=A,possible_number_pattern=A),premium_rate=B(national_number_pattern=A,possible_number_pattern=A),shared_cost=B(national_number_pattern=A,possible_number_pattern=A),personal_number=B(national_number_pattern=A,possible_number_pattern=A),voip=B(national_number_pattern='51(?:00\\d{5}(?:\\d{3})?|[13]0\\d{8})',possible_number_pattern=F,example_number=D),pager=B(national_number_pattern=A,possible_number_pattern=A),uan=B(national_number_pattern=A,possible_number_pattern=A),voicemail=B(national_number_pattern=A,possible_number_pattern=A),no_international_dialling=B(national_number_pattern=A,possible_number_pattern=A),number_format=[C(pattern='(\\d{3})(\\d{3})(\\d{3})',format=G,leading_digits_pattern=[H]),C(pattern='(\\d{3})(\\d{3})(\\d{3})(\\d{3})',format='\\1 \\2 \\3 \\4',leading_digits_pattern=[H]),C(pattern='(\\d{4})(\\d{4})(\\d{4})',format=G,leading_digits_pattern=['51[13]'])])

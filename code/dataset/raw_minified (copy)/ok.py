@@ -1,1 +1,0 @@
-def A(handler,parameters):return{'status':'ok','parameters':parameters}

@@ -1,1 +1,0 @@
-A='from orator.seeds import Seeder\n\n\nclass DummyClass(Seeder):\n\n    def run(self):\n        """\n        Run the database seeds.\n        """\n        pass\n\n'

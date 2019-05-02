@@ -1,2 +1,0 @@
-'\nGetline - A library to get text from the console\nAuthor: Tim Henderson\nContact: tim.tadh@hackthology.com\nCopyright (c) 2010 All Rights Reserved.\nLicensed under a BSD style license see the LICENSE file.\n\nFile: __linux_impl\nPurpose: The linux implementation of getline\n'
-class A(Exception):0

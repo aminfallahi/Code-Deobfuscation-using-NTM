@@ -1,2 +1,0 @@
-'\ntest_msgsize - exercise deterministic msocket stepper_d with large messages\n'
-A=[('Exercise the deterministic socket stepper with some very large messages\nto reveal its limitations: this stepper fails some behaviors allowed by the model.\n The first two test runs are supposed to fail. ...','pmt msgsizes -i stepper_d all_observables -q -t 5')]

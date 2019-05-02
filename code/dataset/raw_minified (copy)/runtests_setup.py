@@ -1,2 +1,0 @@
-'\nSample setup.py script that generates an executable with pytest runner embedded.\n'
-if __name__=='__main__':from cx_Freeze import setup,Executable as A;import pytest as B;setup(name='runtests',version='0.1',description='exemple of how embedding py.test into an executable using cx_freeze',executables=[A('runtests_script.py')],options={'build_exe':{'includes':B.freeze_includes()}})

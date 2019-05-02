@@ -1,2 +1,0 @@
-import numpy as A,numpy.testing as D,nitime.algorithms as E
-def B():B=A.random.rand(10);C=A.random.rand(10,10);F=E.seed_corrcoef(B,C);G=A.array([A.corrcoef(B,D)[(0,1)]for D in C]);D.assert_array_almost_equal(F,G)

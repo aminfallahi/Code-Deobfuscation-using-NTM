@@ -1,9 +1,0 @@
-A='YOUR_KEY_HERE'
-B=A
-C=A
-D='4d4b7105d754a06376d81259'
-E=A
-F=A
-G=A
-H=A
-I=A

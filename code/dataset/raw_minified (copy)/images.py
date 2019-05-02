@@ -1,2 +1,0 @@
-from extract_image_features import extract_images_features
-from proc_image_features import process_image_features

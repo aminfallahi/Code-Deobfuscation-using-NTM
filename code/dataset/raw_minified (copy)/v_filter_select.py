@@ -1,1 +1,0 @@
-class A:ATTR_NO_TEXT_INPUT='noInput'

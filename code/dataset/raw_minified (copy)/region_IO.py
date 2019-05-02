@@ -1,5 +1,0 @@
-'Auto-generated file, do not edit by hand. IO metadata'
-C='\\d{7}'
-A='NA'
-from ..phonemetadata import NumberFormat as D,PhoneNumberDesc as B,PhoneMetadata as E
-F=E(id='IO',country_code=246,international_prefix='00',general_desc=B(national_number_pattern='3\\d{6}',possible_number_pattern=C),fixed_line=B(national_number_pattern='37\\d{5}',possible_number_pattern=C,example_number='3709100'),mobile=B(national_number_pattern='38\\d{5}',possible_number_pattern=C,example_number='3801234'),toll_free=B(national_number_pattern=A,possible_number_pattern=A),premium_rate=B(national_number_pattern=A,possible_number_pattern=A),shared_cost=B(national_number_pattern=A,possible_number_pattern=A),personal_number=B(national_number_pattern=A,possible_number_pattern=A),voip=B(national_number_pattern=A,possible_number_pattern=A),pager=B(national_number_pattern=A,possible_number_pattern=A),uan=B(national_number_pattern=A,possible_number_pattern=A),voicemail=B(national_number_pattern=A,possible_number_pattern=A),no_international_dialling=B(national_number_pattern=A,possible_number_pattern=A),number_format=[D(pattern='(\\d{3})(\\d{4})',format='\\1 \\2')])

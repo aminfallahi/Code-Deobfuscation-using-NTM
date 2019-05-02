@@ -1,1 +1,0 @@
-'\n# Tests of the utils itercompat library.\n\n>>> from django.utils.itercompat import sorted as compat_sorted\n\n# Check the replacement version of sorted\n>>> x = [5,1,4,2,3]\n>>> y = compat_sorted(x)\n>>> print y\n[1, 2, 3, 4, 5]\n\n>>> print x \n[5, 1, 4, 2, 3]\n\n'

@@ -1,3 +1,0 @@
-from muntjac.api import VerticalLayout as A,Label as B
-class D(A):
-	def __init__(A):super(D,A).__init__();A.setSpacing(True);C=B('This is an example of a Label component. The content mode of this label is set to CONTENT_TEXT. This means that it will display the content text as is. HTML and XML special characters (<,>,&) are escaped properly to allow displaying them.');C.setContentMode(B.CONTENT_TEXT);A.addComponent(C)

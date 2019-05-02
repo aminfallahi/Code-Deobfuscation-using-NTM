@@ -1,1 +1,0 @@
-class A:SPLITTER_CLICK_EVENT_IDENTIFIER='sp_click'

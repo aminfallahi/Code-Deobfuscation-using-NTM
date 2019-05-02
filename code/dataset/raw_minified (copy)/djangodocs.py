@@ -1,1 +1,0 @@
-def A(app):A='setting';app.add_crossref_type(directivename=A,rolename=A,indextemplate='pair: %s; setting')

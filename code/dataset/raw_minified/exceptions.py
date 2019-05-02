@@ -1,1 +1,0 @@
-class FileNotFoundError(Exception):0

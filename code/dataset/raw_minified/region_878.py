@@ -1,6 +1,0 @@
-'Auto-generated file, do not edit by hand. 878 metadata'
-F='\\d{12}'
-C='101234567890'
-A='NA'
-from ..phonemetadata import NumberFormat as D,PhoneNumberDesc as B,PhoneMetadata as E
-G=E(id='001',country_code=878,international_prefix=None,general_desc=B(national_number_pattern='1\\d{11}',possible_number_pattern=F,example_number=C),fixed_line=B(national_number_pattern=A,possible_number_pattern=A,example_number=C),mobile=B(national_number_pattern=A,possible_number_pattern=A,example_number=C),toll_free=B(national_number_pattern=A,possible_number_pattern=A),premium_rate=B(national_number_pattern=A,possible_number_pattern=A),shared_cost=B(national_number_pattern=A,possible_number_pattern=A),personal_number=B(national_number_pattern=A,possible_number_pattern=A),voip=B(national_number_pattern='10\\d{10}',possible_number_pattern=F,example_number=C),pager=B(national_number_pattern=A,possible_number_pattern=A),uan=B(national_number_pattern=A,possible_number_pattern=A),voicemail=B(national_number_pattern=A,possible_number_pattern=A),no_international_dialling=B(national_number_pattern=A,possible_number_pattern=A),number_format=[D(pattern='(\\d{2})(\\d{5})(\\d{5})',format='\\1 \\2 \\3')])

@@ -1,1 +1,0 @@
-def A(td):'\n    Given a timedelta object, returns a float representing milliseconds\n    ';return td.seconds*1000+td.microseconds/1000.0

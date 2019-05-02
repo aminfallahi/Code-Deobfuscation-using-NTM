@@ -1,3 +1,0 @@
-class A(Exception):
-	'If a downloader had a non-clean exit, but it was not due to an HTTP error'
-	def __str__(A):return A.args[0]

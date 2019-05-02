@@ -1,6 +1,0 @@
-'Auto-generated file, do not edit by hand. CG metadata'
-F='\\1 \\2 \\3'
-C='\\d{9}'
-A='NA'
-from ..phonemetadata import NumberFormat as D,PhoneNumberDesc as B,PhoneMetadata as E
-G=E(id='CG',country_code=242,international_prefix='00',general_desc=B(national_number_pattern='[028]\\d{8}',possible_number_pattern=C),fixed_line=B(national_number_pattern='222[1-589]\\d{5}',possible_number_pattern=C,example_number='222123456'),mobile=B(national_number_pattern='0[14-6]\\d{7}',possible_number_pattern=C,example_number='061234567'),toll_free=B(national_number_pattern=A,possible_number_pattern=A),premium_rate=B(national_number_pattern='800\\d{6}',possible_number_pattern=C,example_number='800123456'),shared_cost=B(national_number_pattern=A,possible_number_pattern=A),personal_number=B(national_number_pattern=A,possible_number_pattern=A),voip=B(national_number_pattern=A,possible_number_pattern=A),pager=B(national_number_pattern=A,possible_number_pattern=A),uan=B(national_number_pattern=A,possible_number_pattern=A),voicemail=B(national_number_pattern=A,possible_number_pattern=A),no_international_dialling=B(national_number_pattern=A,possible_number_pattern=A),number_format=[D(pattern='(\\d{2})(\\d{3})(\\d{4})',format=F,leading_digits_pattern=['[02]']),D(pattern='(\\d)(\\d{4})(\\d{4})',format=F,leading_digits_pattern=['8'])],leading_zero_possible=True)

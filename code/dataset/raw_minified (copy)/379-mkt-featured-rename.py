@@ -1,2 +1,0 @@
-from bandwagon.models import Collection as A
-def B():D='mozilla';B=A.objects.get(author__username=D,slug='webapps_home');B.slug='featured_apps_home';B.save();C=A.objects.get(author__username=D,slug='webapps_featured');C.slug='featured_apps_category';C.save()

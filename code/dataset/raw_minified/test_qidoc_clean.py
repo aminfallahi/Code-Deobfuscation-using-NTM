@@ -1,2 +1,0 @@
-import os as A
-def B(qidoc_action):F='clean';D='world';B=qidoc_action;E=B.add_test_project(D);C=A.path.join(E.path,'build-doc');assert not A.path.exists(C);B('build',D);assert A.path.exists(C);B(F,D);assert A.path.exists(C);B(F,D,'--force');assert not A.path.exists(C)

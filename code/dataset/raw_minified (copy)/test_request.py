@@ -1,2 +1,0 @@
-class A:
-	def test_it(F):E='exists';from kotti.request import Request as B;from zope.interface import providedBy as C,implementedBy as D;A=B({});A.set_property(lambda x:E,'marker',reify=True);assert C(A)==D(B);assert A.marker==E

@@ -1,3 +1,0 @@
-from serializable import Serializable as A
-class B(A):
-	def __init__(A,username,total_commands,total_sessions,total_systems,total_commands_today,session_name,session_start_time,session_total_commands):A.username=username;A.total_commands=total_commands;A.total_sessions=total_sessions;A.total_systems=total_systems;A.total_commands_today=total_commands_today;A.session_name=session_name;A.session_start_time=session_start_time;A.session_total_commands=session_total_commands

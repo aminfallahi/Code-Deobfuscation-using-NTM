@@ -1,2 +1,0 @@
-from redash import models as A
-if __name__=='__main__':B=A.Group.select(A.Group.id,A.Group.permissions).where(A.Group.name=='default').first();B.permissions.append('list_users');B.save(only=[A.Group.permissions])

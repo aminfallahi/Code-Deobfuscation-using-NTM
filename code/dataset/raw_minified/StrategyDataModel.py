@@ -1,2 +1,0 @@
-import tables as A,time
-class B(A.IsDescription):symbol=A.StringCol(30);exchange=A.StringCol(10);adj_high=A.Float32Col();adj_low=A.Float32Col();adj_open=A.Float32Col();adj_close=A.Float32Col();close=A.Float32Col();volume=A.Int32Col();timestamp=A.Time64Col();date=A.Int32Col();interval=A.Time64Col()

@@ -1,6 +1,0 @@
-'Auto-generated file, do not edit by hand. BL metadata'
-E='0'
-C='\\d{9}'
-A='NA'
-from ..phonemetadata import NumberFormat,PhoneNumberDesc as B,PhoneMetadata as D
-F=D(id='BL',country_code=590,international_prefix='00',general_desc=B(national_number_pattern='[56]\\d{8}',possible_number_pattern=C),fixed_line=B(national_number_pattern='590(?:2[7-9]|5[12]|87)\\d{4}',possible_number_pattern=C,example_number='590271234'),mobile=B(national_number_pattern='690(?:0[0-7]|[1-9]\\d)\\d{4}',possible_number_pattern=C,example_number='690301234'),toll_free=B(national_number_pattern=A,possible_number_pattern=A),premium_rate=B(national_number_pattern=A,possible_number_pattern=A),shared_cost=B(national_number_pattern=A,possible_number_pattern=A),personal_number=B(national_number_pattern=A,possible_number_pattern=A),voip=B(national_number_pattern=A,possible_number_pattern=A),pager=B(national_number_pattern=A,possible_number_pattern=A),uan=B(national_number_pattern=A,possible_number_pattern=A),voicemail=B(national_number_pattern=A,possible_number_pattern=A),no_international_dialling=B(national_number_pattern=A,possible_number_pattern=A),national_prefix=E,national_prefix_for_parsing=E)

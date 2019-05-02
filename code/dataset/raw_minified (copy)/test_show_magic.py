@@ -1,2 +1,0 @@
-from metakernel.tests.utils import get_kernel as D,get_log_text,clear_log_text,EvalKernel as E
-def A():I='Welcome to the big show!';H='text/plain';G='data';F='payload';C=D(E);B=C.do_execute('%%show\nWelcome to the big show!\n');A=B[F][0][G][H];assert I in A,A;B=C.do_execute('%%show --output\n# Welcome to the big show!\nretval = "This is a test"\n');A=B[F][0][G][H];assert I not in A,A;assert'This is a test'in A,A

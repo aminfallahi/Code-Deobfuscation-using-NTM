@@ -1,1 +1,0 @@
-assert_has_feature(9,151,192,'roads',{'kind':'major_road','ref':None})

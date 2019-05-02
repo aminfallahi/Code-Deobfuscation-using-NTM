@@ -1,1 +1,0 @@
-def A(qitoolchain_action,toolchains,record_messages):C='boost';B='foo';A=toolchains;A.create(B);A.add_package(B,C,package_version='1.57-r3');qitoolchain_action('package-info','--toolchain',B,C);assert record_messages.find('boost 1.57-r3')
