@@ -5,7 +5,8 @@ import random
 
 np.set_printoptions(threshold=np.inf)
 
-def _generate_data(num_batches,batch_size):
+def _generate_data(num_batches,batch_size,num_bits,seq_len):
+	batches=[]
 	for nb in range(num_batches):
 		batchesInput=[]
 		batchesOutput=[]
@@ -20,29 +21,48 @@ def _generate_data(num_batches,batch_size):
 			if len(inp)>m:
 				m=len(inp)
 
+			#shorten number of bits per vector
+			for i in range(len(inp)):
+				inp[i]=inp[i][0:num_bits]
+			
 			for i in range(len(inp)):
 				inp[i].append(0)
-			for i in range(128-len(inp)):
-				inp.append([0]*len(inp[0]))
+			
+			#fix sequence length
+			if len(inp)<seq_len:
+				for i in range(seq_len-len(inp)):
+					inp.append([0]*len(inp[0]))
+			inp=inp[0:seq_len]
+			
 			inp.append([1]*len(inp[0]))
-			for i in range(128):
+
+			for i in range(seq_len):
 				inp.append([0]*len(inp[0]))
 			batchesInput.append(inp)
 			f.close()
 		#output
-
 		m=0
 		for filename in files:
 			f=open('./vectorized_raw/'+filename,"r")
 			inp=eval(f.read())
 			if len(inp)>m:
 				m=len(inp)
-			for i in range(128-len(inp)):
-				inp.append([0]*len(inp[0]))
+
+			#shorten number of bits per vector
+			for i in range(len(inp)):
+				inp[i]=inp[i][0:num_bits]
+
+			#fix sequence length
+			if len(inp)<seq_len:
+				for i in range(seq_len-len(inp)):
+					inp.append([0]*len(inp[0]))
+			inp=inp[0:seq_len]
+
 			batchesOutput.append(inp)
 			f.close()
-
-		batches=[]
-		batches.append((128,np.asarray(batchesInput),np.asarray(batchesOutput)))
-		#pprint(batches[0][1])
+		
+		batches.append((seq_len,np.float32(np.asarray(batchesInput)),np.float32(np.asarray(batchesOutput))))
+	np.set_printoptions(threshold=np.inf)
+	pprint(batches)
 	return batches
+_generate_data(3,5,8,20)

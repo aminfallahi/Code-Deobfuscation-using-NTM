@@ -11,7 +11,7 @@ snap_boolean = np.vectorize(lambda x: 1.0 if x > 0.5 else 0.0)
 class CopyTaskData:
     def generate_batches(self, num_batches, batch_size, bits_per_vector=8, curriculum_point=20, max_seq_len=20,
         curriculum='uniform', pad_to_max_seq_len=False):
-        return self._generate_batches(num_batches,batch_size)
+        return self._generate_batches(num_batches,batch_size,bits_per_vector,max_seq_len)
         batches = []
         for i in range(num_batches):
             if curriculum == 'deterministic_uniform':
@@ -40,12 +40,13 @@ class CopyTaskData:
             full_inputs = np.concatenate((inputs, eos, output_inputs), axis=1)
 
             batches.append((pad_to_len, full_inputs, inputs[:, :, :bits_per_vector]))
-        #np.set_printoptions(threshold=np.inf)
+        np.set_printoptions(threshold=np.inf)
         #print(batches)
         #exit()
         return batches
 
-    def _generate_batches(self,num_batches,batch_size):
+    def _generate_batches(self,num_batches,batch_size,num_bits,seq_len):
+        batches=[]
         for nb in range(num_batches):
             batchesInput=[]
             batchesOutput=[]
@@ -60,12 +61,22 @@ class CopyTaskData:
                 if len(inp)>m:
                     m=len(inp)
 
+                #shorten number of bits per vector
+                for i in range(len(inp)):
+                    inp[i]=inp[i][0:num_bits]
+                
                 for i in range(len(inp)):
                     inp[i].append(0)
-                for i in range(128-len(inp)):
-                    inp.append([0]*len(inp[0]))
+                
+                #fix sequence length
+                if len(inp)<seq_len:
+                    for i in range(seq_len-len(inp)):
+                        inp.append([0]*len(inp[0]))
+                inp=inp[0:seq_len]
+                
                 inp.append([1]*len(inp[0]))
-                for i in range(128):
+
+                for i in range(seq_len):
                     inp.append([0]*len(inp[0]))
                 batchesInput.append(inp)
                 f.close()
@@ -77,14 +88,23 @@ class CopyTaskData:
                 inp=eval(f.read())
                 if len(inp)>m:
                     m=len(inp)
-                for i in range(128-len(inp)):
-                    inp.append([0]*len(inp[0]))
+
+                #shorten number of bits per vector
+                for i in range(len(inp)):
+                    inp[i]=inp[i][0:num_bits]
+
+                #fix sequence length
+                if len(inp)<seq_len:
+                    for i in range(seq_len-len(inp)):
+                        inp.append([0]*len(inp[0]))
+                inp=inp[0:seq_len]
+
                 batchesOutput.append(inp)
                 f.close()
 
-            batches=[]
-            batches.append((128,np.asarray(batchesInput),np.asarray(batchesOutput)))
-            #pprint(batches[0][1])
+            batches.append((seq_len,np.asarray(batchesInput),np.asarray(batchesOutput)))
+        np.set_printoptions(threshold=np.inf)
+        #pprint(batches)
         return batches
 
     def error_per_seq(self, labels, outputs, num_seq):
