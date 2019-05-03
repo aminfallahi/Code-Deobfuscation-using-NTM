@@ -10,9 +10,9 @@ snap_boolean = np.vectorize(lambda x: 1.0 if x > 0.5 else 0.0)
 
 class CopyTaskData:
     def generate_batches(self, num_batches, batch_size, bits_per_vector=8, curriculum_point=20, max_seq_len=20,
-        curriculum='uniform', pad_to_max_seq_len=False, dataset='train'):
+        curriculum='uniform', pad_to_max_seq_len=False, dataset='train', shuffle_sequence=False, add_noise_sequence=0, add_noise_batch=0.5):
 
-        return self._generate_batches(num_batches,batch_size,bits_per_vector,max_seq_len, curriculum, curriculum_point, dataset)
+        return self._generate_batches(num_batches,batch_size,bits_per_vector,max_seq_len, curriculum, curriculum_point, dataset, shuffle_sequence, add_noise_sequence, add_noise_batch)
         batches = []
         for i in range(num_batches):
             if curriculum == 'deterministic_uniform':
@@ -46,7 +46,7 @@ class CopyTaskData:
         #exit()
         return batches
 
-    def _generate_batches(self,num_batches,batch_size,num_bits, max_seq_len, curriculum, curriculum_point, dataset):
+    def _generate_batches(self,num_batches,batch_size,num_bits, max_seq_len, curriculum, curriculum_point, dataset, shuffle_sequence=False, add_noise_sequence=0, add_noise_batch=0):
         batches=[]
         for nb in range(num_batches):
             if curriculum == 'deterministic_uniform':
@@ -72,6 +72,7 @@ class CopyTaskData:
                 files=files[1000:]
             random.shuffle(files)
             files=files[0:batch_size]
+            permutations=[]
             #input
             for filename in files:
                 f=open('./dataset/vectorized_raw_minified/'+filename,"r")
@@ -85,22 +86,40 @@ class CopyTaskData:
                 
                 for i in range(len(inp)):
                     inp[i].append(0)
-                
+
                 #fix sequence length
                 if len(inp)<seq_len:
                     for i in range(seq_len-len(inp)):
                         inp.append([0]*len(inp[0]))
                 inp=inp[0:seq_len]
                 
+                #shuffling
+                if shuffle_sequence:
+                    rangeList=list(range(len(inp)))
+                    random.shuffle(rangeList)
+                    permutations.append(rangeList)
+                    inp=[x for _,x in sorted(zip(rangeList,inp))]
+                
+                #adding noise to input sequence by rewriting random rows
+                randCount=int(add_noise_sequence*len(inp))
+                rangeList=list(range(len(inp)))
+                random.shuffle(rangeList)
+                for i in range(randCount):
+                    randVec=np.random.randint(2,size=num_bits).tolist()
+                    randVec.append(0)
+                    inp[rangeList[i]]=randVec
+                                
+                #add terminator
                 inp.append([1]*len(inp[0]))
 
                 for i in range(seq_len):
                     inp.append([0]*len(inp[0]))
                 batchesInput.append(inp)
                 f.close()
-            #output
 
+            #output
             m=0
+            c=0
             for filename in files:
                 f=open('./dataset/vectorized_raw/'+filename,"r")
                 inp=eval(f.read())
@@ -111,6 +130,11 @@ class CopyTaskData:
                 for i in range(len(inp)):
                     inp[i]=inp[i][0:num_bits]
 
+                #shuffling
+                if shuffle_sequence:
+                    rangeList=permutations[c]
+                    inp=[x for _,x in sorted(zip(rangeList,inp))]                
+
                 #fix sequence length
                 if len(inp)<seq_len:
                     for i in range(seq_len-len(inp)):
@@ -119,7 +143,21 @@ class CopyTaskData:
 
                 batchesOutput.append(inp)
                 f.close()
-
+                c+=1
+            
+            #add noise to batches by replacing some of the inputs with garbage
+            randCount=int(add_noise_batch*len(batchesInput))
+            rangeList=list(range(len(batchesInput)))
+            random.shuffle(rangeList)
+            for i in range(randCount):
+                randMat=np.random.randint(2, size=(seq_len,num_bits)).tolist()
+                for j in range(seq_len):
+                    randMat[j].append(0)
+                randMat.append([1]*(num_bits+1))
+                for j in range(seq_len):
+                    randMat.append([0]*(num_bits+1))
+                batchesInput[rangeList[i]]=randMat
+            
             batches.append((seq_len,np.asarray(batchesInput),np.asarray(batchesOutput)))
         np.set_printoptions(threshold=np.inf)
         #pprint(batches)

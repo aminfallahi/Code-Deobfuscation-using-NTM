@@ -38,6 +38,8 @@ def _generate_data(num_batches,batch_size,num_bits,seq_len):
 
 			for i in range(seq_len):
 				inp.append([0]*len(inp[0]))
+			print(inp)
+			exit()
 			batchesInput.append(inp)
 			f.close()
 		#output
@@ -63,6 +65,6 @@ def _generate_data(num_batches,batch_size,num_bits,seq_len):
 		
 		batches.append((seq_len,np.float32(np.asarray(batchesInput)),np.float32(np.asarray(batchesOutput))))
 	np.set_printoptions(threshold=np.inf)
-	pprint(batches)
+	#pprint(batches)
 	return batches
-pprint(_generate_data(3,5,8,20))
+_generate_data(3,5,8,20)

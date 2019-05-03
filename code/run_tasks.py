@@ -49,6 +49,11 @@ parser.add_argument('--job-dir', type=str, required=False)
 parser.add_argument('--steps_per_eval', type=int, default=200)
 parser.add_argument('--use_local_impl', type=str2bool, default=True, help='whether to use the repos local NTM implementation or the TF contrib version')
 
+#perturbation
+parser.add_argument('--shuffle_sequence', type=str2bool, default=False, help='whether to shuffle tokens in each program (input and output).')
+parser.add_argument('--add_noise_sequence', type=float, default=0, help='percent of noise to be added to each sequence of tokens in input')
+parser.add_argument('--add_noise_batch', type=float, default=0, help='percent of noise in each batch in input')
+
 args = parser.parse_args()
 
 if args.mann == 'ntm':
