@@ -72,6 +72,28 @@
 %% Uncommenting
 %% the next command will enable that style.
 %%\citestyle{acmauthoryear}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{frame=tb,
+	language=Java,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
 
 %%
 %% end of the preamble, start of the body of the document source.
@@ -182,8 +204,48 @@ Research on code deobfuscation has been a topic of interest during the recent ye
 
 \section{Background}
 \subsection{Neural Program Learning}
-from slides: Neural networks that can be taught programmatic behavior, to perform computations more typically associated with conventional computers
+Neural program learning is the use of program behavior to train deep neural networks so they perform like the program or produce the code based on input/outputs, partial programs, etc. So, a neural network can be used as a programmer and also an interpreter. The research in this area has been proposed by several researchers during the past decade, varying from implementing logical gates using neural networks \cite{neto} to completing a partial program code \cite{forth}.
 \subsection{Code Deobfuscation}
+Obfuscation is a method used by programmers, specially in web services, to hide the running code from the user. When users visit a website using a browser with JavaScript enabled, several scripts will be executed in their browsers. The service providers, usually make the code unreadable by changing identifier names to meaningless tokens and then remove white space and tabs to decrease code size. Shrinking code size leads to less data transfer and faster page loading but changing identifier names is a method to hide the actual function of code from the user. Websites practice advertising, tracking, and other acts that are privacy concerns using these codes and keep their action secret by obfuscating the code.
+
+Several methods have been proposed for deobfuscation. Basic methods recover tabs and spaces to make the code more readable but are not capable of recovering the actual code including identifier names. Some methods use machine learning and statistical approaches to recover identifier names. Also, some approaches target deciphering code that has been encrypted using different algorithms.
+
+Listing 1. shows a piece of obfuscated JavaScript code grabbed from Facebook.com. This code is unminified using an online tool, Unminify \cite{unminify}, by inserting tabs and spaces for it to look more readable, but most of the identifier names are still obfuscated. As we can see most of them have been changed to single letter names, making it hard for anyone to understand what the code is actually doing.
+
+Listing 2. shows the same code from Listing 1. deobfuscated using JSNice \cite{jsnice} tool which uses statistical methods to recover identifier names. As we can see, some of the identifier names have been recovered and the code is more understandable. However, we can not be sure how accurate are the names that are assigned to obfuscated identifiers.
+
+\begin{lstlisting}[language=Java,caption={An obfuscated JavaScript code from facebook.com}]
+__d("ContextualLayerAlignmentEnum", ["prop-types"], (function(a, b, c, d, e, f) {
+	"use strict";
+	a = {
+		left: "left",
+		center: "center",
+		right: "right",
+		propType: b("prop-types").oneOf(["left", "center", "right"]),
+		values: ["left", "center", "right"]
+	};
+	e.exports = a
+}), null);
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java,caption={Deobfuscated JavaScript code from Listing 1. using JsNice\cite{jsnice} tool}]
+'use strict';
+__d("ContextualLayerAlignmentEnum", ["prop-types"], function(h, require, canCreateDiscussions, isSlidingUp, module, dontForceConstraints) {
+	h = {
+		left : "left",
+		center : "center",
+		right : "right",
+		propType : require("prop-types").oneOf(["left", "center", "right"]),
+		values : ["left", "center", "right"]
+	};
+	/** @type {(Object|string)} */
+	module.exports = h;
+}, null);
+\end{lstlisting}
+
+
+
+
 \subsection{Neural Turing Machine}
 The idea behind Neural Turing Machines is to use an external memory to extend the capabilities of recurrent neural networks. The external memory and the network can then interact with attentional processes.
 
@@ -258,7 +320,17 @@ Figure \ref{fig:ntmaddressing} shows the flow of addressing mechanism.
 \end{figure}
 
 \section{Dataset Preparation}
+Researchers in Secure, Reliable, and Intelligent Systems Lab at ETH Zurich have collected and published a data set of 150000 JavaScript programs and 150000 Python scripts as a part of their research \cite{jsnice} which is publicly available at \cite{bigcodedataset}. They have also parsed the programs and generated abstract syntax trees (AST) for all the programs in json format. In this research we build our dataset on top of their raw Python code dataset. For simplicity, we filter a set of 1848 programs each with less than 20 lines of code and smaller than 1 Kilobyte and truncate codes with unicode and non-ascii characters. Then, we use a simple Python tokenizer \cite{tokenizer} to extract all the tokens used in all programs. We sort the tokens and remove duplicates to create our final list containing 22973 tokens addressable with 15 binary bits. Afterwards, we create a list of vectors starting from 0b000000000000000 to 0b101100110111101 (22973) each representing one token. Finally, we use pyminify \cite{pyminify} (which is a simple tool for minifying Python codes) with --rename-globals option to rename all the variables to generate our obfuscated dataset and then we convert each program to a set of vectors based on their tokens and store the resulting dataset.
+
+For our dataset to fit the NTM implementation we are using, we write a program to generate data batches. Each input sequence stores 128 token vectors and one vector of all ones indicating the end of sequence. The rest of sequence will be padded to 257 (2 times number of tokens minus 1 for the termination vector) vectors using vectors of all zeros. We also add one zero to all token vectors except the termination vector to differentiate them from it. So, the final shape of each input will be 257x16. Each output sequence stores 128 token vectors of 15 bits resulting in a shape of 128x15. The final batch that fits the NTM implementation we use is in the $[(sequence_length, array([[[]]], dtype=float32))]$ format and stores sequence length (128) and $n$ batches of inputs and outputs.
 \section{Implementation}
+The original authors of Neural Turing Machine have not published their source code to the public, but since 2014, multiple open source implementations have been released by various groups. Most of the implementations are limited and unstable. One the lates implementations which is more robust and reliable is the one by Collier et al. \cite{collier} which has won a best paper award. Therefore, we chose to modify their code to meet our application and use it for this research.
+
+This implementation uses three tasks for evaluating neural turing machines: copy task that generates the same output by copying the input, repeat-copy task that extends copy task to copying input for specific number of times and produce it as output, associative recall that feeds a list of items to the network, queries one of them, and expects the next item in the list to be produced in output \cite{}.
+
+We use copy task for our application. However, our data inputs and outputs are different and we are not using it for copying the input to output.
+
+This implementation uses random sequences of vectors as the data. We implement a new data generator function to use our dataset instead of the randomly generated one. The details of our data generator is described in section 4.
 \section{Evaluation}
 \section{Discussion}
 \section{Future Work}
@@ -746,3 +818,78 @@ massa et mattis lacinia.
 \endinput
 %%
 %% End of file `sample-acmsmall.tex'.
+__d("ViewportTrackingHooks", ["Base64"], (function(a, b, c, d, e, f) {
+	__p && __p();
+	var g = {},
+	h = [];
+	a = {
+		registerFeedObject: function(a, c) {
+			g[a] = b("Base64").encode(c)
+		},
+		updateVisibleViewportObjects: function(a) {
+			var b = [],
+			c = !1;
+			for (var d = 0; d < a.length; d++) {
+				var e = a[d],
+				f = e.id;
+				while (!(f in g) && e.firstChild != void 0 && e.firstChild.id != void 0 && e.firstChild.id.startsWith("u_")) f = e.firstChild.id, e = e.firstChild;
+				f in g && (b.push(g[f]), (!(d in h) || h[d] != g[f]) && (c = !0))
+			}!c && h.length != b.length && (c = !0);
+			c && (h = b, typeof __EXT__updateVisibleViewportObjects === "function" && __EXT__updateVisibleViewportObjects(h))
+		}
+	};
+	e.exports = a
+}), null);
+\end{lstlisting}
+\begin{lstlisting}
+'use strict';
+__d("ViewportTrackingHooks", ["Base64"], function(__WEBPACK_EXTERNAL_MODULE_61__, require, canCreateDiscussions, isSlidingUp, module, dontForceConstraints) {
+if (__p) {
+__p();
+}
+var obj = {};
+/** @type {!Array} */
+var a = [];
+__WEBPACK_EXTERNAL_MODULE_61__ = {
+registerFeedObject : function(table, data) {
+obj[table] = require("Base64").encode(data);
+},
+updateVisibleViewportObjects : function(queryEvents) {
+/** @type {!Array} */
+var b = [];
+/** @type {boolean} */
+var c = false;
+/** @type {number} */
+var i = 0;
+for (; i < queryEvents.length; i++) {
+var e = queryEvents[i];
+var key = e.id;
+for (; !(key in obj) && e.firstChild != void 0 && e.firstChild.id != void 0 && e.firstChild.id.startsWith("u_");) {
+key = e.firstChild.id;
+e = e.firstChild;
+}
+if (key in obj) {
+b.push(obj[key]);
+if (!(i in a) || a[i] != obj[key]) {
+/** @type {boolean} */
+c = true;
+}
+}
+}
+if (!c && a.length != b.length) {
+/** @type {boolean} */
+c = true;
+}
+if (c) {
+/** @type {!Array} */
+a = b;
+if (typeof __EXT__updateVisibleViewportObjects === "function") {
+__EXT__updateVisibleViewportObjects(a);
+}
+}
+}
+};
+/** @type {(Object|string)} */
+module.exports = __WEBPACK_EXTERNAL_MODULE_61__;
+}, null);
+\end{lstlisting}
