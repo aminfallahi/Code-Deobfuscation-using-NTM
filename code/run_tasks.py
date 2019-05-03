@@ -8,6 +8,9 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+#disable tensorflow warnings
+tf.logging.set_verbosity(tf.logging.ERROR)
+
 import argparse
 
 parser = argparse.ArgumentParser()
@@ -29,7 +32,7 @@ parser.add_argument('--init_mode', type=str, default='learned', help='learned | 
 parser.add_argument('--optimizer', type=str, default='Adam', help='RMSProp | Adam')
 parser.add_argument('--learning_rate', type=float, default=0.001)
 parser.add_argument('--max_grad_norm', type=float, default=50)
-parser.add_argument('--num_train_steps', type=int, default=31250)
+parser.add_argument('--num_train_steps', type=int, default=30)
 parser.add_argument('--batch_size', type=int, default=32)
 parser.add_argument('--eval_batch_size', type=int, default=640)
 
@@ -220,7 +223,8 @@ def eval_performance(curriculum_point, store_heat_maps=False):
         curriculum_point=None,
         max_seq_len=args.max_seq_len,
         curriculum='none',
-        pad_to_max_seq_len=args.pad_to_max_seq_len
+        pad_to_max_seq_len=args.pad_to_max_seq_len,
+        dataset='test'
     )
 
     target_task_loss, target_task_error = run_eval(batches, store_heat_maps=store_heat_maps)
@@ -234,7 +238,8 @@ def eval_performance(curriculum_point, store_heat_maps=False):
         curriculum_point=None,
         max_seq_len=args.max_seq_len,
         curriculum='deterministic_uniform',
-        pad_to_max_seq_len=args.pad_to_max_seq_len
+        pad_to_max_seq_len=args.pad_to_max_seq_len,
+        dataset='test'
     )
 
     multi_task_loss, multi_task_error = run_eval(batches)
@@ -248,7 +253,8 @@ def eval_performance(curriculum_point, store_heat_maps=False):
             curriculum_point=curriculum_point,
             max_seq_len=args.max_seq_len,
             curriculum='naive',
-            pad_to_max_seq_len=args.pad_to_max_seq_len
+            pad_to_max_seq_len=args.pad_to_max_seq_len,
+            dataset='test'
         )
 
         curriculum_point_loss, curriculum_point_error = run_eval(batches)
@@ -272,7 +278,8 @@ def eval_generalization():
             curriculum_point=i,
             max_seq_len=args.max_seq_len,
             curriculum='naive',
-            pad_to_max_seq_len=False
+            pad_to_max_seq_len=False,
+            dataset='test'
         )
 
         loss, error = run_eval(batches, store_heat_maps=args.verbose, generalization_num=i)
@@ -293,7 +300,8 @@ for i in range(args.num_train_steps):
         curriculum_point=curriculum_point if args.curriculum != 'prediction_gain' else task,
         max_seq_len=args.max_seq_len,
         curriculum=args.curriculum,
-        pad_to_max_seq_len=args.pad_to_max_seq_len
+        pad_to_max_seq_len=args.pad_to_max_seq_len,
+        dataset='train'
     )[0]
 
     train_loss, _, outputs = sess.run([model.loss, model.train_op, model.outputs],

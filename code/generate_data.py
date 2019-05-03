@@ -10,8 +10,9 @@ snap_boolean = np.vectorize(lambda x: 1.0 if x > 0.5 else 0.0)
 
 class CopyTaskData:
     def generate_batches(self, num_batches, batch_size, bits_per_vector=8, curriculum_point=20, max_seq_len=20,
-        curriculum='uniform', pad_to_max_seq_len=False):
-        return self._generate_batches(num_batches,batch_size,bits_per_vector,max_seq_len)
+        curriculum='uniform', pad_to_max_seq_len=False, dataset='train'):
+
+        return self._generate_batches(num_batches,batch_size,bits_per_vector,max_seq_len, curriculum, curriculum_point, dataset)
         batches = []
         for i in range(num_batches):
             if curriculum == 'deterministic_uniform':
@@ -45,13 +46,30 @@ class CopyTaskData:
         #exit()
         return batches
 
-    def _generate_batches(self,num_batches,batch_size,num_bits,seq_len):
+    def _generate_batches(self,num_batches,batch_size,num_bits, max_seq_len, curriculum, curriculum_point, dataset):
         batches=[]
         for nb in range(num_batches):
+            if curriculum == 'deterministic_uniform':
+                seq_len = 1 + (nb % max_seq_len)
+            elif curriculum == 'uniform':
+                seq_len = np.random.randint(low=1, high=max_seq_len+1)
+            elif curriculum == 'none':
+                seq_len = max_seq_len
+            elif curriculum in ('naive', 'prediction_gain'):
+                seq_len = curriculum_point
+            elif curriculum == 'look_back':
+                seq_len = curriculum_point if np.random.random_sample() < 0.9 else np.random.randint(low=1, high=curriculum_point+1)
+            elif curriculum == 'look_back_and_forward':
+                seq_len = curriculum_point if np.random.random_sample() < 0.8 else np.random.randint(low=1, high=max_seq_len+1)
+            
             batchesInput=[]
             batchesOutput=[]
             m=0
             files=os.listdir('./dataset/vectorized_raw_minified')
+            if dataset=='train':
+                files=files[:1000]
+            else:
+                files=files[1000:]
             random.shuffle(files)
             files=files[0:batch_size]
             #input

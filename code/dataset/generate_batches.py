@@ -65,4 +65,4 @@ def _generate_data(num_batches,batch_size,num_bits,seq_len):
 	np.set_printoptions(threshold=np.inf)
 	pprint(batches)
 	return batches
-_generate_data(3,5,8,20)
+pprint(_generate_data(3,5,8,20))
