@@ -10,7 +10,7 @@ snap_boolean = np.vectorize(lambda x: 1.0 if x > 0.5 else 0.0)
 
 class CopyTaskData:
     def generate_batches(self, num_batches, batch_size, bits_per_vector=8, curriculum_point=20, max_seq_len=20,
-        curriculum='uniform', pad_to_max_seq_len=False, dataset='train', shuffle_sequence=False, add_noise_sequence=0, add_noise_batch=0.5):
+        curriculum='uniform', pad_to_max_seq_len=False, dataset='train', shuffle_sequence=False, add_noise_sequence=0, add_noise_batch=0):
 
         return self._generate_batches(num_batches,batch_size,bits_per_vector,max_seq_len, curriculum, curriculum_point, dataset, shuffle_sequence, add_noise_sequence, add_noise_batch)
         batches = []

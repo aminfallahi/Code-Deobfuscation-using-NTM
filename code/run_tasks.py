@@ -229,7 +229,10 @@ def eval_performance(curriculum_point, store_heat_maps=False):
         max_seq_len=args.max_seq_len,
         curriculum='none',
         pad_to_max_seq_len=args.pad_to_max_seq_len,
-        dataset='test'
+        dataset='test',
+        shuffle_sequence=args.shuffle_sequence,
+        add_noise_sequence=args.add_noise_sequence,
+        add_noise_batch=args.add_noise_batch
     )
 
     target_task_loss, target_task_error = run_eval(batches, store_heat_maps=store_heat_maps)
@@ -244,7 +247,10 @@ def eval_performance(curriculum_point, store_heat_maps=False):
         max_seq_len=args.max_seq_len,
         curriculum='deterministic_uniform',
         pad_to_max_seq_len=args.pad_to_max_seq_len,
-        dataset='test'
+        dataset='test',
+        shuffle_sequence=args.shuffle_sequence,
+        add_noise_sequence=args.add_noise_sequence,
+        add_noise_batch=args.add_noise_batch
     )
 
     multi_task_loss, multi_task_error = run_eval(batches)
@@ -259,7 +265,10 @@ def eval_performance(curriculum_point, store_heat_maps=False):
             max_seq_len=args.max_seq_len,
             curriculum='naive',
             pad_to_max_seq_len=args.pad_to_max_seq_len,
-            dataset='test'
+            dataset='test',
+            shuffle_sequence=args.shuffle_sequence,
+            add_noise_sequence=args.add_noise_sequence,
+            add_noise_batch=args.add_noise_batch
         )
 
         curriculum_point_loss, curriculum_point_error = run_eval(batches)
@@ -284,7 +293,10 @@ def eval_generalization():
             max_seq_len=args.max_seq_len,
             curriculum='naive',
             pad_to_max_seq_len=False,
-            dataset='test'
+            dataset='test',
+            shuffle_sequence=args.shuffle_sequence,
+            add_noise_sequence=args.add_noise_sequence,
+            add_noise_batch=args.add_noise_batch
         )
 
         loss, error = run_eval(batches, store_heat_maps=args.verbose, generalization_num=i)
@@ -306,7 +318,10 @@ for i in range(args.num_train_steps):
         max_seq_len=args.max_seq_len,
         curriculum=args.curriculum,
         pad_to_max_seq_len=args.pad_to_max_seq_len,
-        dataset='train'
+        dataset='train',
+		shuffle_sequence=args.shuffle_sequence,
+		add_noise_sequence=args.add_noise_sequence,
+		add_noise_batch=args.add_noise_batch
     )[0]
 
     train_loss, _, outputs = sess.run([model.loss, model.train_op, model.outputs],
