@@ -94,7 +94,7 @@ class CopyTaskData:
                 inp=inp[0:seq_len]
                 
                 #shuffling
-                if shuffle_sequence:
+                if shuffle_sequence and dataset=='test':
                     rangeList=list(range(len(inp)))
                     random.shuffle(rangeList)
                     permutations.append(rangeList)
@@ -131,7 +131,7 @@ class CopyTaskData:
                     inp[i]=inp[i][0:num_bits]
 
                 #shuffling
-                if shuffle_sequence:
+                if shuffle_sequence and dataset=='test':
                     rangeList=permutations[c]
                     inp=[x for _,x in sorted(zip(rangeList,inp))]                
 

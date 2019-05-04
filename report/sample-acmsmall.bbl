@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{0}
+\begin{thebibliography}{10}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -36,5 +36,151 @@
 \providecommand\bibinfo[2]{#2}
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{??}{big}{[n.d.]}]%
+        {bigcodedataset}
+ \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \bibinfo{title}{Datasets - Learning from "Big Code"}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://learnbigcode.github.io/datasets/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{??}{jsn}{[n.d.]}]%
+        {jsnice3}
+ \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \bibinfo{title}{JS NICE: Statistical renaming, Type inference and
+  Deobfuscation}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://jsnice.org}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{??}{nic}{[n.d.]}]%
+        {nice2predict}
+ \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \bibinfo{title}{Nice2Predict}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://jsnice.org}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Bichsel, Raychev, Tsankov, and Vechev}{Bichsel
+  et~al\mbox{.}}{2016}]%
+        {bichselandroid}
+\bibfield{author}{\bibinfo{person}{Benjamin Bichsel}, \bibinfo{person}{Veselin
+  Raychev}, \bibinfo{person}{Petar Tsankov}, {and} \bibinfo{person}{Martin
+  Vechev}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Statistical Deobfuscation of Android Applications}.
+  In \bibinfo{booktitle}{\emph{Proceedings of the 2016 ACM SIGSAC Conference on
+  Computer and Communications Security}} \emph{(\bibinfo{series}{CCS '16})}.
+  \bibinfo{publisher}{ACM}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{343--355}.
+\newblock
+\showISBNx{978-1-4503-4139-4}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2976749.2978422}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Bo\v{s}njak, Rockt\"{a}schel, Naradowsky, and
+  Riedel}{Bo\v{s}njak et~al\mbox{.}}{2017}]%
+        {forth}
+\bibfield{author}{\bibinfo{person}{Matko Bo\v{s}njak}, \bibinfo{person}{Tim
+  Rockt\"{a}schel}, \bibinfo{person}{Jason Naradowsky}, {and}
+  \bibinfo{person}{Sebastian Riedel}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Programming with a Differentiable Forth
+  Interpreter}. In \bibinfo{booktitle}{\emph{Proceedings of the 34th
+  International Conference on Machine Learning - Volume 70}}
+  \emph{(\bibinfo{series}{ICML'17})}. \bibinfo{publisher}{JMLR.org},
+  \bibinfo{pages}{547--556}.
+\newblock
+\urldef\tempurl%
+\url{http://dl.acm.org/citation.cfm?id=3305381.3305438}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Jiang}{Jiang}{2018}]%
+        {jiangcnn}
+\bibfield{author}{\bibinfo{person}{Wei Jiang}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Method for Detecting Javascript Code Obfuscation
+  based on Convolutional Neural Network}.
+\newblock \bibinfo{journal}{\emph{International Journal of Performability
+  Engineering}}  \bibinfo{volume}{14} (\bibinfo{date}{12}
+  \bibinfo{year}{2018}).
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.23940/ijpe.18.12.p26.31673173}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Lin, Wang, Pang, Vu, Zettlemoyer, and
+  Ernst}{Lin et~al\mbox{.}}{2017}]%
+        {nlprnn}
+\bibfield{author}{\bibinfo{person}{Xi~Victoria Lin}, \bibinfo{person}{Chenglong
+  Wang}, \bibinfo{person}{Deric Pang}, \bibinfo{person}{Kevin Vu},
+  \bibinfo{person}{Luke Zettlemoyer}, {and} \bibinfo{person}{Michael~D.
+  Ernst}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Program synthesis from natural language
+  using recurrent neural networks}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport} UW-CSE-17-03-01.
+  \bibinfo{institution}{University of Washington Department of Computer Science
+  and Engineering}, \bibinfo{address}{Seattle, WA, USA}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Raychev, Vechev, and Krause}{Raychev
+  et~al\mbox{.}}{2019}]%
+        {jsnice1}
+\bibfield{author}{\bibinfo{person}{Veselin Raychev}, \bibinfo{person}{Martin
+  Vechev}, {and} \bibinfo{person}{Andreas Krause}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Predicting Program Properties from 'Big Code'}.
+\newblock \bibinfo{journal}{\emph{Commun. ACM}} \bibinfo{volume}{62},
+  \bibinfo{number}{3} (\bibinfo{year}{2019}), \bibinfo{pages}{99--107}.
+\newblock
+\showISSN{0001-0782}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3306204}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Raychev, Vechev, and Yahav}{Raychev
+  et~al\mbox{.}}{2014}]%
+        {Raychev2014}
+\bibfield{author}{\bibinfo{person}{Veselin Raychev}, \bibinfo{person}{Martin
+  Vechev}, {and} \bibinfo{person}{Eran Yahav}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Code Completion with Statistical Language Models}.
+\newblock \bibinfo{journal}{\emph{SIGPLAN Not.}} \bibinfo{volume}{49},
+  \bibinfo{number}{6} (\bibinfo{date}{June} \bibinfo{year}{2014}),
+  \bibinfo{pages}{419--428}.
+\newblock
+\showISSN{0362-1340}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2666356.2594321}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{{UK \TeX{} Users Group}}{{UK \TeX{} Users
+  Group}}{2019}]%
+        {TeXFAQ}
+\bibfield{author}{\bibinfo{person}{{UK \TeX{} Users Group}}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{{UK} List of {\TeX} Frequently Asked Questions}.
+\newblock \bibinfo{howpublished}{\url{https://texfaq.org}}.
+\newblock
+
 
 \end{thebibliography}

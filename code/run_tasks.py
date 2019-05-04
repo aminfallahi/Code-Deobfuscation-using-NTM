@@ -21,8 +21,8 @@ def str2bool(v):
 parser.add_argument('--mann', type=str, default='ntm', help='none | ntm')
 parser.add_argument('--num_layers', type=int, default=1)
 parser.add_argument('--num_units', type=int, default=100)
-parser.add_argument('--num_memory_locations', type=int, default=128)
-parser.add_argument('--memory_size', type=int, default=20)
+parser.add_argument('--num_memory_locations', type=int, default=64)
+parser.add_argument('--memory_size', type=int, default=10)
 parser.add_argument('--num_read_heads', type=int, default=1)
 parser.add_argument('--num_write_heads', type=int, default=1)
 parser.add_argument('--conv_shift_range', type=int, default=1, help='only necessary for ntm')
@@ -32,8 +32,8 @@ parser.add_argument('--init_mode', type=str, default='learned', help='learned | 
 parser.add_argument('--optimizer', type=str, default='Adam', help='RMSProp | Adam')
 parser.add_argument('--learning_rate', type=float, default=0.001)
 parser.add_argument('--max_grad_norm', type=float, default=50)
-parser.add_argument('--num_train_steps', type=int, default=30)
-parser.add_argument('--batch_size', type=int, default=32)
+parser.add_argument('--num_train_steps', type=int, default=500)
+parser.add_argument('--batch_size', type=int, default=16)
 parser.add_argument('--eval_batch_size', type=int, default=640)
 
 parser.add_argument('--curriculum', type=str, default='none', help='none | uniform | naive | look_back | look_back_and_forward | prediction_gain')
@@ -46,7 +46,7 @@ parser.add_argument('--max_seq_len', type=int, default=20)
 parser.add_argument('--verbose', type=str2bool, default=True, help='if true prints lots of feedback')
 parser.add_argument('--experiment_name', type=str, required=True)
 parser.add_argument('--job-dir', type=str, required=False)
-parser.add_argument('--steps_per_eval', type=int, default=200)
+parser.add_argument('--steps_per_eval', type=int, default=50)
 parser.add_argument('--use_local_impl', type=str2bool, default=True, help='whether to use the repos local NTM implementation or the TF contrib version')
 
 #perturbation
@@ -54,7 +54,14 @@ parser.add_argument('--shuffle_sequence', type=str2bool, default=False, help='wh
 parser.add_argument('--add_noise_sequence', type=float, default=0, help='percent of noise to be added to each sequence of tokens in input')
 parser.add_argument('--add_noise_batch', type=float, default=0, help='percent of noise in each batch in input')
 
+#logfilename
+parser.add_argument('--log_file_name', type=str, required=True)
+
+
 args = parser.parse_args()
+
+outFile=open("eval/"+args.log_file_name,"w")
+outFileEval=open("eval/"+args.log_file_name+"_","w")
 
 if args.mann == 'ntm':
     if args.use_local_impl:
@@ -319,9 +326,9 @@ for i in range(args.num_train_steps):
         curriculum=args.curriculum,
         pad_to_max_seq_len=args.pad_to_max_seq_len,
         dataset='train',
-		shuffle_sequence=args.shuffle_sequence,
-		add_noise_sequence=args.add_noise_sequence,
-		add_noise_batch=args.add_noise_batch
+        shuffle_sequence=args.shuffle_sequence,
+        add_noise_sequence=args.add_noise_sequence,
+        add_noise_batch=args.add_noise_batch
     )[0]
 
     train_loss, _, outputs = sess.run([model.loss, model.train_op, model.outputs],
@@ -343,6 +350,8 @@ for i in range(args.num_train_steps):
         logger.info('curriculum_point: {0}'.format(curriculum_point))
         logger.info('Average errors/sequence: {0}'.format(avg_errors_per_seq))
         logger.info('TRAIN_PARSABLE: {0},{1},{2},{3}'.format(i, curriculum_point, train_loss, avg_errors_per_seq))
+        print(i, curriculum_point, train_loss, avg_errors_per_seq,file=outFile)
+        logger.info('\n')
 
     if i % args.steps_per_eval == 0:
         target_task_error, target_task_loss, multi_task_error, multi_task_loss, curriculum_point_error, \
@@ -379,7 +388,7 @@ for i in range(args.num_train_steps):
         logger.info('curriculum point error/loss ({0}): {1},{2}'.format(curriculum_point, curriculum_point_error, curriculum_point_loss))
         logger.info('EVAL_PARSABLE: {0},{1},{2},{3},{4},{5},{6},{7}'.format(i, target_task_error, target_task_loss,
             multi_task_error, multi_task_loss, curriculum_point, curriculum_point_error, curriculum_point_loss))
-
+        print(i, target_task_error, target_task_loss,multi_task_error, multi_task_loss, curriculum_point, curriculum_point_error, curriculum_point_loss,file=outFileEval)
 if convergence_on_multi_task is None:
     performance_on_multi_task = multi_task_error
     generalization_from_multi_task = eval_generalization()
@@ -396,7 +405,10 @@ logger.info('performance_on_multi_task: {0}'.format(performance_on_multi_task))
 
 logger.info('SUMMARY_PARSABLE: {0},{1},{2},{3}'.format(convergence_on_target_task, performance_on_target_task,
             convergence_on_multi_task, performance_on_multi_task))
+print(convergence_on_target_task, performance_on_target_task,convergence_on_multi_task, performance_on_multi_task,file=outFile)
 
 logger.info('generalization_from_target_task: {0}'.format(','.join(map(str, generalization_from_target_task)) if generalization_from_target_task is not None else None))
+print('{0}'.format(' '.join(map(str, generalization_from_target_task))),file=outFile)
 logger.info('generalization_from_multi_task: {0}'.format(','.join(map(str, generalization_from_multi_task)) if generalization_from_multi_task is not None else None))
+print('{0}'.format(' '.join(map(str, generalization_from_multi_task))),file=outFile)
 
