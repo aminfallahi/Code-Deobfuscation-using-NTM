@@ -2,57 +2,17 @@ This is BibTeX, Version 0.99d (TeX Live 2019/dev/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: sample-acmsmall.aux
 The style file: ACM-Reference-Format.bst
-Illegal, another \bibstyle command---line 146 of file sample-acmsmall.aux
- : \bibstyle
- :          {ACM-Reference-Format}
-I'm skipping whatever remains of this command
-Illegal, another \bibdata command---line 147 of file sample-acmsmall.aux
- : \bibdata
- :         {sample-base}
-I'm skipping whatever remains of this command
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: acmart.bib
 Warning--I didn't find a database entry for "neto"
 Warning--I didn't find a database entry for "unminify"
 Warning--I didn't find a database entry for "jsnice"
+Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "tokenizer"
 Warning--I didn't find a database entry for "pyminify"
 Warning--I didn't find a database entry for "collier"
-Warning--I didn't find a database entry for ""
-Warning--I didn't find a database entry for "Lamport:LaTeX"
-Warning--I didn't find a database entry for "Abril07"
-Warning--I didn't find a database entry for "Cohen07"
-Warning--I didn't find a database entry for "JCohen96"
-Warning--I didn't find a database entry for "Kosiur01"
-Warning--I didn't find a database entry for "Harel79"
-Warning--I didn't find a database entry for "Editor00"
-Warning--I didn't find a database entry for "Editor00a"
-Warning--I didn't find a database entry for "Spector90"
-Warning--I didn't find a database entry for "Douglass98"
-Warning--I didn't find a database entry for "Knuth97"
-Warning--I didn't find a database entry for "Andler79"
-Warning--I didn't find a database entry for "Smith10"
-Warning--I didn't find a database entry for "VanGundy07"
-Warning--I didn't find a database entry for "Harel78"
-Warning--I didn't find a database entry for "Clarkson85"
-Warning--I didn't find a database entry for "anisi03"
-Warning--I didn't find a database entry for "Thornburg01"
-Warning--I didn't find a database entry for "Ablamowicz07"
-Warning--I didn't find a database entry for "Poker06"
-Warning--I didn't find a database entry for "Obama08"
-Warning--I didn't find a database entry for "Novak03"
-Warning--I didn't find a database entry for "Lee05"
-Warning--I didn't find a database entry for "JoeScientist001"
-Warning--I didn't find a database entry for "rous08"
-Warning--I didn't find a database entry for "SaeediMEJ10"
-Warning--I didn't find a database entry for "SaeediJETC10"
-Warning--I didn't find a database entry for "Kirschmer:2010:AEI:1958016.1958018"
-Warning--I didn't find a database entry for "MR781536"
-Warning--I didn't find a database entry for "MR781537"
-Warning--I didn't find a database entry for "2004:ITE:1009386.1010128"
-Warning--I didn't find a database entry for "TUGInstmem"
-Warning--I didn't find a database entry for "CTANacmart"
+Warning--I didn't find a database entry for "dnc"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--no key, author in jsnice3
 Warning--no author, editor, organization, or key in jsnice3
@@ -86,46 +46,47 @@ Warning--no author, editor, organization, or key in nice2predict
 Warning--empty author in nice2predict
 Warning--empty year in nice2predict
 Warning--empty address in forth
+Warning--page numbers missing in both pages and numpages fields in ntm
 Warning--page numbers missing in both pages and numpages fields in jiangcnn
-You've used 10 entries,
+You've used 11 entries,
             5719 wiz_defined-function locations,
-            1430 strings with 16946 characters,
-and the built_in function-call counts, 10117 in all, are:
-= -- 1216
-> -- 300
+            1382 strings with 16535 characters,
+and the built_in function-call counts, 11856 in all, are:
+= -- 1524
+> -- 359
 < -- 1
-+ -- 98
-- -- 96
-* -- 743
-:= -- 959
-add.period$ -- 48
-call.type$ -- 10
-change.case$ -- 62
-chr.to.int$ -- 10
-cite$ -- 51
-duplicate$ -- 909
-empty$ -- 655
-format.name$ -- 116
-if$ -- 2426
++ -- 119
+- -- 116
+* -- 882
+:= -- 1101
+add.period$ -- 53
+call.type$ -- 11
+change.case$ -- 71
+chr.to.int$ -- 11
+cite$ -- 53
+duplicate$ -- 1035
+empty$ -- 746
+format.name$ -- 144
+if$ -- 2907
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 22
-newline$ -- 149
-num.names$ -- 56
-pop$ -- 405
+missing$ -- 30
+newline$ -- 166
+num.names$ -- 64
+pop$ -- 449
 preamble$ -- 1
-purify$ -- 134
+purify$ -- 151
 quote$ -- 0
-skip$ -- 298
+skip$ -- 333
 stack$ -- 0
-substring$ -- 688
-swap$ -- 88
+substring$ -- 815
+swap$ -- 103
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 258
-warning$ -- 29
-while$ -- 48
+type$ -- 260
+warning$ -- 30
+while$ -- 55
 width$ -- 0
-write$ -- 237
-(There were 2 error messages)
+write$ -- 262
+(There were 38 warnings)

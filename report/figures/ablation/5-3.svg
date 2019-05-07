@@ -44,16 +44,15 @@
  <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 649,284 L 799,284"/>
  <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 649,284 L 799,284"/>
  <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 799,3865 L 799,284"/>
- <path fill="rgb(0,69,134)" stroke="none" d="M 8046,3865 L 8771,3865 8771,3507 8046,3507 8046,3865 Z"/>
- <path fill="rgb(0,69,134)" stroke="none" d="M 7321,3865 L 8046,3865 8046,2611 7321,2611 7321,3865 Z"/>
- <path fill="rgb(0,69,134)" stroke="none" d="M 6596,3865 L 7321,3865 7321,1716 6596,1716 6596,3865 Z"/>
+ <path fill="rgb(0,69,134)" stroke="none" d="M 8046,3865 L 8771,3865 8771,2611 8046,2611 8046,3865 Z"/>
+ <path fill="rgb(0,69,134)" stroke="none" d="M 7321,3865 L 8046,3865 8046,2074 7321,2074 7321,3865 Z"/>
+ <path fill="rgb(0,69,134)" stroke="none" d="M 6596,3865 L 7321,3865 7321,3149 6596,3149 6596,3865 Z"/>
  <path fill="rgb(0,69,134)" stroke="none" d="M 5871,3865 L 6596,3865 6596,821 5871,821 5871,3865 Z"/>
- <path fill="rgb(0,69,134)" stroke="none" d="M 5146,3865 L 5871,3865 5871,463 5146,463 5146,3865 Z"/>
- <path fill="rgb(0,69,134)" stroke="none" d="M 4423,3865 L 5146,3865 5146,821 4423,821 4423,3865 Z"/>
- <path fill="rgb(0,69,134)" stroke="none" d="M 3698,3865 L 4423,3865 4423,1000 3698,1000 3698,3865 Z"/>
- <path fill="rgb(0,69,134)" stroke="none" d="M 2973,3865 L 3698,3865 3698,2611 2973,2611 2973,3865 Z"/>
- <path fill="rgb(0,69,134)" stroke="none" d="M 2248,3865 L 2973,3865 2973,3686 2248,3686 2248,3865 Z"/>
- <path fill="rgb(0,69,134)" stroke="none" d="M 1523,3865 L 2248,3865 2248,3686 1523,3686 1523,3865 Z"/>
+ <path fill="rgb(0,69,134)" stroke="none" d="M 5146,3865 L 5871,3865 5871,1357 5146,1357 5146,3865 Z"/>
+ <path fill="rgb(0,69,134)" stroke="none" d="M 4423,3865 L 5146,3865 5146,642 4423,642 4423,3865 Z"/>
+ <path fill="rgb(0,69,134)" stroke="none" d="M 3698,3865 L 4423,3865 4423,1716 3698,1716 3698,3865 Z"/>
+ <path fill="rgb(0,69,134)" stroke="none" d="M 2973,3865 L 3698,3865 3698,1895 2973,1895 2973,3865 Z"/>
+ <path fill="rgb(0,69,134)" stroke="none" d="M 2248,3865 L 2973,3865 2973,2970 2248,2970 2248,3865 Z"/>
  <path fill="rgb(0,69,134)" stroke="none" d="M 799,3865 L 1523,3865 1523,3686 799,3686 799,3865 Z"/>
  <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="318px" font-weight="400"><tspan class="TextPosition" x="976" y="4406"><tspan fill="rgb(0,0,0)" stroke="none">41</tspan></tspan></tspan></text>
  <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="318px" font-weight="400"><tspan class="TextPosition" x="1701" y="4406"><tspan fill="rgb(0,0,0)" stroke="none">42</tspan></tspan></tspan></text>

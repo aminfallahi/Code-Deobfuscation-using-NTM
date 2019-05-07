@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{10}
+\begin{thebibliography}{11}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -110,6 +110,38 @@
 \tempurl}
 
 
+\bibitem[\protect\citeauthoryear{Graves, Wayne, and Danihelka}{Graves
+  et~al\mbox{.}}{2014}]%
+        {ntm}
+\bibfield{author}{\bibinfo{person}{Alex Graves}, \bibinfo{person}{Greg Wayne},
+  {and} \bibinfo{person}{Ivo Danihelka}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Neural Turing Machines}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1410.5401}
+  (\bibinfo{year}{2014}).
+\newblock
+\showeprint[arxiv]{1410.5401}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1410.5401}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Hochreiter and Schmidhuber}{Hochreiter and
+  Schmidhuber}{1997}]%
+        {lstm}
+\bibfield{author}{\bibinfo{person}{Sepp Hochreiter} {and}
+  \bibinfo{person}{J\"{u}rgen Schmidhuber}.} \bibinfo{year}{1997}\natexlab{}.
+\newblock \showarticletitle{Long Short-Term Memory}.
+\newblock \bibinfo{journal}{\emph{Neural Comput.}} \bibinfo{volume}{9},
+  \bibinfo{number}{8} (\bibinfo{date}{Nov.} \bibinfo{year}{1997}),
+  \bibinfo{pages}{1735--1780}.
+\newblock
+\showISSN{0899-7667}
+\urldef\tempurl%
+\url{https://doi.org/10.1162/neco.1997.9.8.1735}
+\showDOI{\tempurl}
+
+
 \bibitem[\protect\citeauthoryear{Jiang}{Jiang}{2018}]%
         {jiangcnn}
 \bibfield{author}{\bibinfo{person}{Wei Jiang}.}
@@ -171,16 +203,6 @@
 \urldef\tempurl%
 \url{https://doi.org/10.1145/2666356.2594321}
 \showDOI{\tempurl}
-
-
-\bibitem[\protect\citeauthoryear{{UK \TeX{} Users Group}}{{UK \TeX{} Users
-  Group}}{2019}]%
-        {TeXFAQ}
-\bibfield{author}{\bibinfo{person}{{UK \TeX{} Users Group}}.}
-  \bibinfo{year}{2019}\natexlab{}.
-\newblock \bibinfo{title}{{UK} List of {\TeX} Frequently Asked Questions}.
-\newblock \bibinfo{howpublished}{\url{https://texfaq.org}}.
-\newblock
 
 
 \end{thebibliography}

@@ -167,6 +167,16 @@ class CopyTaskData:
         outputs[outputs >= 0.5] = 1.0
         outputs[outputs < 0.5] = 0.0
         bit_errors = np.sum(np.abs(labels - outputs))
+        #print(labels)
+        #print("********")
+        #print(outputs)
+        #print("********")
+        #print(labels-outputs)
+        #print("********")
+        #print(bit_errors)
+        #print("********")
+        #print(num_seq)
+        print("error percent=",bit_errors/2560)
         return bit_errors/num_seq
 
 class RepeatCopyTaskData:
