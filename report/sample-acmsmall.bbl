@@ -49,16 +49,6 @@
 \tempurl}
 
 
-\bibitem[\protect\citeauthoryear{??}{col}{[n.d.]}]%
-        {collier}
- \bibinfo{year}{[n.d.]}\natexlab{}.
-\newblock \showarticletitle{Implementing Neural Turing Machines,
-  author={Collier, Mark and Beel, Joeran}, journal={International Conference on
-  Artificial Neural Networks, ICANN.}, year={2018}}.
-\newblock  (\bibinfo{year}{[n.\,d.]}).
-\newblock
-
-
 \bibitem[\protect\citeauthoryear{??}{jsn}{[n.d.]}]%
         {jsnice3}
  \bibinfo{year}{[n.d.]}\natexlab{}.
@@ -152,6 +142,21 @@
 \newblock
 \urldef\tempurl%
 \url{http://dl.acm.org/citation.cfm?id=3305381.3305438}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Collier and Beel}{Collier and Beel}{2018}]%
+        {collier}
+\bibfield{author}{\bibinfo{person}{Mark Collier} {and}
+  \bibinfo{person}{J{\"{o}}ran Beel}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Implementing Neural Turing Machines}.
+\newblock \bibinfo{journal}{\emph{CoRR}}  \bibinfo{volume}{abs/1807.08518}
+  (\bibinfo{year}{2018}).
+\newblock
+\showeprint[arxiv]{1807.08518}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1807.08518}
 \showURL{%
 \tempurl}
 
@@ -257,6 +262,10 @@
   \bibinfo{institution}{University of Washington Department of Computer Science
   and Engineering}, \bibinfo{address}{Seattle, WA, USA}.
 \newblock
+\urldef\tempurl%
+\url{https://homes.cs.washington.edu/~mernst/pubs/nl-command-tr170301.pdf}
+\showURL{%
+\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{P.~Neto, Siegelmann, and Costa}{P.~Neto
@@ -269,6 +278,10 @@
   Neural Nets}.
 \newblock  (\bibinfo{date}{05} \bibinfo{year}{2019}).
 \newblock
+\urldef\tempurl%
+\url{https://www.researchgate.net/publication/243780440_On_the_Implementation_of_Programming_Languages_with_Neural_Nets}
+\showURL{%
+\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Raychev, Vechev, and Krause}{Raychev
