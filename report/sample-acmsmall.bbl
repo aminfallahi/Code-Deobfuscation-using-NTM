@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{21}
+\begin{thebibliography}{22}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -54,18 +54,6 @@
  \bibinfo{year}{[n.d.]}\natexlab{}.
 \newblock \bibinfo{title}{JS NICE: Statistical renaming, Type inference and
   Deobfuscation}.
-\newblock
-\newblock
-\urldef\tempurl%
-\url{https://jsnice.org}
-\showURL{%
-\tempurl}
-
-
-\bibitem[\protect\citeauthoryear{??}{nic}{[n.d.]}]%
-        {nice2predict}
- \bibinfo{year}{[n.d.]}\natexlab{}.
-\newblock \bibinfo{title}{Nice2Predict}.
 \newblock
 \newblock
 \urldef\tempurl%
@@ -157,6 +145,20 @@
 \showeprint[arxiv]{1807.08518}
 \urldef\tempurl%
 \url{http://arxiv.org/abs/1807.08518}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Deleu}{Deleu}{2016}]%
+        {ntml}
+\bibfield{author}{\bibinfo{person}{Tristan Deleu}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{title}{NTM-Lasagne: A Library for Neural Turing Machines in
+  Lasagne}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://medium.com/snips-ai/ntm-lasagne-a-library-for-neural-turing-machines-in-lasagne-2cdce6837315}
 \showURL{%
 \tempurl}
 
@@ -355,6 +357,19 @@
 \newblock
 \urldef\tempurl%
 \url{https://code.activestate.com/recipes/577700-extracting-structured-text-or-code/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Weng}{Weng}{2018}]%
+        {ntmarch1}
+\bibfield{author}{\bibinfo{person}{Lilian Weng}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \bibinfo{title}{Attention? Attention!}
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html}
 \showURL{%
 \tempurl}
 

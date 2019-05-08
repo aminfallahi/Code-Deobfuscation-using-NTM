@@ -5,14 +5,11 @@ The style file: ACM-Reference-Format.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: acmart.bib
-Warning--I didn't find a database entry for "jsnice"
+Warning--I didn't find a database entry for "nice2predict"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--no key, author in jsnice3
 Warning--no author, editor, organization, or key in jsnice3
 Warning--to sort, need author or key in jsnice3
-Warning--no key, author in nice2predict
-Warning--no author, editor, organization, or key in nice2predict
-Warning--to sort, need author or key in nice2predict
 Warning--no key, author in unminify
 Warning--no author, editor, organization, or key in unminify
 Warning--to sort, need author or key in unminify
@@ -32,8 +29,6 @@ Warning--no key, author in bigcodedataset
 Warning--no key, author in bigcodedataset
 Warning--no key, author in jsnice3
 Warning--no key, author in jsnice3
-Warning--no key, author in nice2predict
-Warning--no key, author in nice2predict
 Warning--no key, author in pyminify
 Warning--no key, author in pyminify
 Warning--no key, author in srilab
@@ -49,10 +44,6 @@ Warning--no key, author in jsnice3
 Warning--no author, editor, organization, or key in jsnice3
 Warning--empty author in jsnice3
 Warning--empty year in jsnice3
-Warning--no key, author in nice2predict
-Warning--no author, editor, organization, or key in nice2predict
-Warning--empty author in nice2predict
-Warning--empty year in nice2predict
 Warning--no key, author in srilab
 Warning--no author, editor, organization, or key in srilab
 Warning--empty author in srilab
@@ -71,45 +62,45 @@ Warning--page numbers missing in both pages and numpages fields in jiangcnn
 Warning--no journal in neto
 Warning--no number and no volume in neto
 Warning--empty year in ntm1
-You've used 21 entries,
+You've used 22 entries,
             5719 wiz_defined-function locations,
-            1426 strings with 18238 characters,
-and the built_in function-call counts, 21484 in all, are:
-= -- 2612
-> -- 767
+            1433 strings with 18513 characters,
+and the built_in function-call counts, 22349 in all, are:
+= -- 2728
+> -- 807
 < -- 1
-+ -- 257
-- -- 260
-* -- 1644
-:= -- 2115
-add.period$ -- 100
-call.type$ -- 21
-change.case$ -- 143
-chr.to.int$ -- 21
-cite$ -- 105
-duplicate$ -- 1826
-empty$ -- 1333
-format.name$ -- 304
-if$ -- 5151
++ -- 266
+- -- 276
+* -- 1680
+:= -- 2247
+add.period$ -- 106
+call.type$ -- 22
+change.case$ -- 149
+chr.to.int$ -- 22
+cite$ -- 93
+duplicate$ -- 1896
+empty$ -- 1378
+format.name$ -- 320
+if$ -- 5314
 int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 46
-newline$ -- 290
-num.names$ -- 120
-pop$ -- 848
+newline$ -- 302
+num.names$ -- 136
+pop$ -- 832
 preamble$ -- 1
-purify$ -- 294
+purify$ -- 315
 quote$ -- 0
-skip$ -- 579
+skip$ -- 619
 stack$ -- 0
-substring$ -- 1352
-swap$ -- 160
+substring$ -- 1436
+swap$ -- 165
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 504
-warning$ -- 60
-while$ -- 102
+type$ -- 534
+warning$ -- 51
+while$ -- 118
 width$ -- 0
-write$ -- 464
-(There were 61 warnings)
+write$ -- 485
+(There were 52 warnings)

@@ -23,7 +23,6 @@
 %%
 %% The first command in your LaTeX source must be the \documentclass command.
 \documentclass[acmsmall]{acmart}
-
 %%
 %% \BibTeX command to typeset BibTeX logo in the docs
 \AtBeginDocument{%
@@ -128,7 +127,7 @@
 %% other information printed in the page headers. This command allows
 %% the author to define a more concise list
 %% of authors' names for this purpose.
-\renewcommand{\shortauthors}{Fallahi, et al.}
+\renewcommand{\shortauthors}{Fallahi, A.}
 
 %%
 %% The abstract is a short summary of the work to be presented in the
@@ -201,7 +200,7 @@ The main contributions of this work are:
 \textbf{Outline} In the remainder of this report, we introduce some of the related works that have been done in this research area in section 2. Then, we discuss basic background knowledge and area literature required for studying this work in section 3. In Section 4 we introduce the dataset we are using for this study and the preparation methods we use for making the data fit our model. Afterwards, we review the implementation details for Neural Turing Machine, our tweaks, and modifications to it for using with our application. We run our implementation through multiple experiments and present the results in section 6 and then we discuss the results and outcome of the research in section 7. In section 8 we discuss some possible extensions to this work which is left for future research and finally, we conclude the study in section 9.
 
 \section{Related Work}
-Research on code deobfuscation has been a topic of interest during recent years. Jiang et al. \cite{jiangcnn} have proposed a method using Convolutional Neural Networks for detecting obfuscated JavaScript code. Raychev et al. \cite{jsnice1} have developed a statistical model for recovering program properties (variable and function names) from obfuscated JavaScript code and have implemented a currently available website named JSNice \cite{jsnice3} which can predict the correct names for 63\% of identifiers from obfuscated code for their test data. They also have designed Nice2Predict \cite{nice2predict} which extracts statistical info out of obfuscated JavaScript code and is a base for JSNice. Raychev et al. \cite{Raychev2014} have done research on code completion and program synthesis which is relevant to our problem. Bichsel et. al. \cite{bichselandroid} have developed and tested a statistical method for deobfuscating Android applications with 79.1\% success in recovering program identifier names. Another relevant research is \cite{forth} which studies filling program missing code slots using the behavior trained from the program input/output data. Lin et al. \cite{nlprnn} have done relevant research on translating natural language templates to program templates using Recurrent Neural Networks.
+Research on code deobfuscation has been a topic of interest during recent years. Jiang et al. \cite{jiangcnn} have proposed a method using Convolutional Neural Networks for detecting obfuscated JavaScript code. Raychev et al. \cite{jsnice1} have developed a statistical model for recovering program properties (variable and function names) from obfuscated JavaScript code and have implemented a currently available website named JSNice \cite{jsnice3} which can predict the correct names for 63\% of identifiers from obfuscated code for their test data. They also have designed Nice2Predict \cite{jsnice3} which extracts statistical info out of obfuscated JavaScript code and is a base for JSNice. Raychev et al. \cite{Raychev2014} have done research on code completion and program synthesis which is relevant to our problem. Bichsel et. al. \cite{bichselandroid} have developed and tested a statistical method for deobfuscating Android applications with 79.1\% success in recovering program identifier names. Another relevant research is \cite{forth} which studies filling program missing code slots using the behavior trained from the program input/output data. Lin et al. \cite{nlprnn} have done relevant research on translating natural language templates to program templates using Recurrent Neural Networks.
 
 \section{Background}
 \subsection{Neural Program Learning}
@@ -229,7 +228,7 @@ __d("ContextualLayerAlignmentEnum", ["prop-types"], (function(a, b, c, d, e, f) 
 }), null);
 \end{lstlisting}
 
-\begin{lstlisting}[language=Java,caption={Deobfuscated JavaScript code from Listing 1. using JsNice\cite{jsnice} tool}]
+\begin{lstlisting}[language=Java,caption={Deobfuscated JavaScript code from Listing 1. using JsNice\cite{jsnice3} tool}]
 'use strict';
 __d("ContextualLayerAlignmentEnum", ["prop-types"], function(h, require, canCreateDiscussions, isSlidingUp, module, dontForceConstraints) {
 	h = {
@@ -254,8 +253,8 @@ As shown in Fig. \ref{fig:ntmarch}, NTM is composed of two main components: the 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.15]{figures/ntmarch}
-	\caption{Neural Turing Machine architecture \cite{ntm}.}
+	\includegraphics[scale=0.25]{figures/ntmarch1}
+	\caption{Neural Turing Machine architecture \cite{ntmarch1}.}
 	\Description{Neural Turing Machine architecture \cite{}.}
 	\label{fig:ntmarch}
 \end{figure}
@@ -282,6 +281,14 @@ Finally, the add vector $a_t$ is used to perform the add operation on the interm
 \begin{equation}
 M_t(i) \longleftarrow \tilde{M}_t(i)+w_t(i)a_t
 \end{equation}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.15]{figures/ntm}
+	\caption{Detailed Neural Turing Machine architecture with an LSTM controller where $x$ is input, $y$ is output, and $h$ indicates hidden state \cite{ntml}.}
+	\Description{Neural Turing Machine architecture \cite{}.}
+	\label{fig:ntmarch}
+\end{figure}
 
 \subsubsection{Addressing}
 NTM produces the weighting vectors for read and write operations by combining content-based and location-based addressing mechanisms.
@@ -338,36 +345,6 @@ We evaluate our model in different scenarios, each changing one parameter of the
 
 We discuss our experiments in the remainder of this section and present our results in Fig. \ref{fig:training} and Fig. \ref{fig:testing}. The former shows training performance for 500 sequences and the latter compares testing performance under fixed size dataset and variable sized dataset for 500 testing sequences. We aggregate our data in Fig. \ref{fig:testing} and present the loss for every 50 sequences to get a smoother curve.
 
-\subsubsection{Baseline Variables}
-Our baseline variables for the network are the following. We change each parameter during each test and observe the effect on the model performance. For each experiment, we evaluate the model once for a dataset of equal size programs and once for a dataset of programs with different number of tokens.
-
-\begin{itemize}
-	\item Number of hidden layers: 1
-	\item Number of memory locations ($N$): 64
-	\item Memory size ($M$): 20
-	\item Number of read heads: 1
-	\item Number of write heads: 1
-	\item Optimizer: Adam
-	\item Learning rate: 0.001
-	\item Batch size: 16
-	\item Number of bits per vector: 8
-\end{itemize}
-
-\subsubsection{Number of hidden layers}
-For this experiment, we use the baseline parameters with two hidden layers instead of one. The results show adding one hidden layer does not contribute to training performance of our model under our experiment setup. Also, the results for test performance with fixed sized and variable sized program instances, show no improvement. However, it is observable that testing with variable sized data has a little negative effect on the performance.
-
-\subsubsection{Number of memory locations}
-We alternate between the baseline value of 64 and test value of 128 for this parameter. While we expect better performance with more memory locations, we do not observe noticeable performance improvement in both training and testing cases. Since we have limited our data size, it is possible that for our 500 training sequences, a larger number of memory locations does not contribute to the performance. Similar to the previous experiment, the model works a little worse with variable sized data.
-
-\subsubsection{Memory size}
-For this test, we change the memory size to 10. Like altering the number of memory locations, this parameter does not alter the performance of training and testing under our experiment setup. However, testing results under fixed size dataset show better performance.
-
-\subsubsection{Learning rate}
-As seen in Fig. \ref{fig:training}, increasing the learning rate highly affects the training and testing loss. Like other experiments, testing with the same sized data results in better performance.
-
-\subsubsection{Number of bits per vector}
-As we expect, reducing the number of bits to 4, in this scenario has a high impact on our training and testing performance. Basically, changing the number of bits from 8 to 4 makes our model support only 16 possible tokens in comparison to 256 tokens. Testing under the same sized data has a negligible improvement in this experiment.
-
 \begin{figure*}%
 	%% first three subfigures
 	\subfigure[Baseline]{%
@@ -402,6 +379,37 @@ As we expect, reducing the number of bits to 4, in this scenario has a high impa
 	}
 	\caption{Learning curves for training the model under different network parameters.}\label{fig:training}
 \end{figure*}
+
+\subsubsection{Baseline Variables}
+Our baseline variables for the network are the following. We change each parameter during each test and observe the effect on the model performance. For each experiment, we evaluate the model once for a dataset of equal size programs and once for a dataset of programs with different number of tokens.
+
+\begin{itemize}
+	\item Number of hidden layers: 1
+	\item Number of memory locations ($N$): 64
+	\item Memory size ($M$): 20
+	\item Number of read heads: 1
+	\item Number of write heads: 1
+	\item Optimizer: Adam
+	\item Learning rate: 0.001
+	\item Batch size: 16
+	\item Number of bits per vector: 8
+\end{itemize}
+
+\subsubsection{Number of hidden layers}
+For this experiment, we use the baseline parameters with two hidden layers instead of one. The results show adding one hidden layer does not contribute to training performance of our model under our experiment setup. Also, the results for test performance with fixed sized and variable sized program instances, show no improvement. However, it is observable that testing with variable sized data has a little negative effect on the performance.
+
+\subsubsection{Number of memory locations}
+We alternate between the baseline value of 64 and test value of 128 for this parameter. While we expect better performance with more memory locations, we do not observe noticeable performance improvement in both training and testing cases. Since we have limited our data size, it is possible that for our 500 training sequences, a larger number of memory locations does not contribute to the performance. Similar to the previous experiment, the model works a little worse with variable sized data.
+
+\subsubsection{Memory size}
+For this test, we change the memory size to 10. Like altering the number of memory locations, this parameter does not alter the performance of training and testing under our experiment setup. However, testing results under fixed size dataset show better performance.
+
+\subsubsection{Learning rate}
+As seen in Fig. \ref{fig:training}, increasing the learning rate highly affects the training and testing loss. Like other experiments, testing with the same sized data results in better performance.
+
+\subsubsection{Number of bits per vector}
+As we expect, reducing the number of bits to 4, in this scenario has a high impact on our training and testing performance. Basically, changing the number of bits from 8 to 4 makes our model support only 16 possible tokens in comparison to 256 tokens. Testing under the same sized data has a negligible improvement in this experiment.
+
 \begin{figure*}%
 	%% first three subfigures
 	\subfigure[Baseline]{%

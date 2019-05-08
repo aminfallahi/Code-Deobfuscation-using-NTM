@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.4.28)  7 MAY 2019 21:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.4.28)  8 MAY 2019 13:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -647,7 +647,7 @@ s
 \@folio@voffset=\dimen155
 
 Special comment 'acks')
-Class acmart Info: Suppressing bibformat on input line 33.
+Class acmart Info: Suppressing bibformat on input line 32.
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count133
@@ -868,12 +868,15 @@ Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
 File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
 ))
-Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 103
+Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 102
 .
 \c@theorem=\count304
 
 Excluding comment 'screenonly' Include comment 'printonly'
 Include comment 'anonsuppress' (./sample-acmsmall.aux
+
+LaTeX Warning: Label `fig:ntmarch' multiply defined.
+
 
 LaTeX Warning: Label `fig:Total_scatter' multiply defined.
 
@@ -949,41 +952,41 @@ LaTeX Warning: Label `sub@fig:Num_scatter' multiply defined.
 )
 \openout1 = `sample-acmsmall.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 103.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 103.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 102.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 102.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    ... okay on input line 102.
 <<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Try loading font information for U+msa on input line 103.
+LaTeX Font Info:    Try loading font information for U+msa on input line 102.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 103.
+LaTeX Font Info:    Try loading font information for U+msb on input line 102.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Info: Redefining \microtypecontext on input line 103.
+LaTeX Info: Redefining \microtypecontext on input line 102.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1000,7 +1003,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 )
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring OFF on input line 103.
+Package hyperref Info: Link coloring OFF on input line 102.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1010,9 +1013,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count305
 )
-LaTeX Info: Redefining \ref on input line 103.
-LaTeX Info: Redefining \pageref on input line 103.
-LaTeX Info: Redefining \nameref on input line 103.
+LaTeX Info: Redefining \ref on input line 102.
+LaTeX Info: Redefining \pageref on input line 102.
+LaTeX Info: Redefining \nameref on input line 102.
 
 (./sample-acmsmall.out) (./sample-acmsmall.out)
 \@outlinefile=\write4
@@ -1095,7 +1098,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 183.
+surrounding objects on input line 182.
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
@@ -1105,10 +1108,10 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [1.1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2.2]
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 218.
+surrounding objects on input line 217.
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 218.
+nput line 217.
 <<ot1tt.cmap>>
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
@@ -1117,123 +1120,87 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 230.
+surrounding objects on input line 229.
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 232.
-
-
-Package natbib Warning: Citation `jsnice' on page 3 undefined on input line 232
-.
-
-
-Package natbib Warning: Citation `jsnice' on page 3 undefined on input line 232
-.
+surrounding objects on input line 231.
 
 
 Class acmart Warning: \vspace should only be used to provide space above/below 
-surrounding objects on input line 245.
+surrounding objects on input line 244.
 
 
 Underfull \vbox (badness 3646) has occurred while \output is active []
 
  [3.3]
-<figures/ntmarch.png, id=152, 1745.52126pt x 1199.48125pt>
-File: figures/ntmarch.png Graphic file (type png)
-<use figures/ntmarch.png>
-Package pdftex.def Info: figures/ntmarch.png  used on input line 257.
-(pdftex.def)             Requested size: 261.8169pt x 179.91443pt.
+<figures/ntmarch1.png, id=152, 880.28876pt x 674.52pt>
+File: figures/ntmarch1.png Graphic file (type png)
+<use figures/ntmarch1.png>
+Package pdftex.def Info: figures/ntmarch1.png  used on input line 256.
+(pdftex.def)             Requested size: 220.07164pt x 168.62958pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 266.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 265.
 
 
-[4.4 <./figures/ntmarch.png>]
+[4.4 <./figures/ntmarch1.png>]
+<figures/ntm.png, id=180, 1634.105pt x 945.5325pt>
+File: figures/ntm.png Graphic file (type png)
+<use figures/ntm.png>
+Package pdftex.def Info: figures/ntm.png  used on input line 287.
+(pdftex.def)             Requested size: 245.10518pt x 141.82375pt.
+
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 291.
+(amsmath)                 on input line 298.
 
-<figures/ntmaddressing.png, id=182, 2308.625pt x 933.4875pt>
+<figures/ntmaddressing.png, id=187, 2308.625pt x 933.4875pt>
 File: figures/ntmaddressing.png Graphic file (type png)
 <use figures/ntmaddressing.png>
-Package pdftex.def Info: figures/ntmaddressing.png  used on input line 316.
+Package pdftex.def Info: figures/ntmaddressing.png  used on input line 323.
 (pdftex.def)             Requested size: 346.27881pt x 140.01707pt.
-[5.5 <./figures/ntmaddressing.png>]
-Underfull \vbox (badness 2698) has occurred while \output is active []
 
- [6.6]
-[7.7]
-<figures/1.pdf, id=232, 323.2075pt x 206.7725pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5.5 <./figures/ntm.png (PNG copy)>] [6.6 <./figures/ntmaddressing.png>]
+<figures/1.pdf, id=228, 323.2075pt x 206.7725pt>
 File: figures/1.pdf Graphic file (type pdf)
 <use figures/1.pdf>
-Package pdftex.def Info: figures/1.pdf  used on input line 376.
+Package pdftex.def Info: figures/1.pdf  used on input line 353.
 (pdftex.def)             Requested size: 122.704pt x 78.49864pt.
-<figures/2.pdf, id=233, 323.2075pt x 206.7725pt>
+<figures/2.pdf, id=229, 323.2075pt x 206.7725pt>
 File: figures/2.pdf Graphic file (type pdf)
 <use figures/2.pdf>
-Package pdftex.def Info: figures/2.pdf  used on input line 381.
+Package pdftex.def Info: figures/2.pdf  used on input line 358.
 (pdftex.def)             Requested size: 122.704pt x 78.49864pt.
-<figures/3.pdf, id=234, 323.2075pt x 206.7725pt>
+<figures/3.pdf, id=230, 323.2075pt x 206.7725pt>
 File: figures/3.pdf Graphic file (type pdf)
 <use figures/3.pdf>
-Package pdftex.def Info: figures/3.pdf  used on input line 386.
+Package pdftex.def Info: figures/3.pdf  used on input line 363.
 (pdftex.def)             Requested size: 122.704pt x 78.49864pt.
-<figures/4.pdf, id=235, 323.2075pt x 206.7725pt>
+<figures/4.pdf, id=231, 323.2075pt x 206.7725pt>
 File: figures/4.pdf Graphic file (type pdf)
 <use figures/4.pdf>
-Package pdftex.def Info: figures/4.pdf  used on input line 392.
+Package pdftex.def Info: figures/4.pdf  used on input line 369.
 (pdftex.def)             Requested size: 122.704pt x 78.49864pt.
-<figures/5.pdf, id=236, 323.2075pt x 206.7725pt>
+<figures/5.pdf, id=232, 323.2075pt x 206.7725pt>
 File: figures/5.pdf Graphic file (type pdf)
 <use figures/5.pdf>
-Package pdftex.def Info: figures/5.pdf  used on input line 397.
+Package pdftex.def Info: figures/5.pdf  used on input line 374.
 (pdftex.def)             Requested size: 122.704pt x 78.49864pt.
-<figures/6.pdf, id=237, 323.2075pt x 206.7725pt>
+<figures/6.pdf, id=233, 323.2075pt x 206.7725pt>
 File: figures/6.pdf Graphic file (type pdf)
 <use figures/6.pdf>
-Package pdftex.def Info: figures/6.pdf  used on input line 402.
+Package pdftex.def Info: figures/6.pdf  used on input line 379.
 (pdftex.def)             Requested size: 122.704pt x 78.49864pt.
 
 
-Class acmart Warning: A possible image without description on input line 404.
+Class acmart Warning: A possible image without description on input line 381.
 
-<figures/7.pdf, id=238, 359.3425pt x 213.79875pt>
-File: figures/7.pdf Graphic file (type pdf)
-<use figures/7.pdf>
-Package pdftex.def Info: figures/7.pdf  used on input line 410.
-(pdftex.def)             Requested size: 122.704pt x 73.00378pt.
-<figures/8.pdf, id=239, 359.3425pt x 213.79875pt>
-File: figures/8.pdf Graphic file (type pdf)
-<use figures/8.pdf>
-Package pdftex.def Info: figures/8.pdf  used on input line 415.
-(pdftex.def)             Requested size: 122.704pt x 73.00378pt.
-<figures/9.pdf, id=240, 359.3425pt x 213.79875pt>
-File: figures/9.pdf Graphic file (type pdf)
-<use figures/9.pdf>
-Package pdftex.def Info: figures/9.pdf  used on input line 420.
-(pdftex.def)             Requested size: 122.704pt x 73.00378pt.
-<figures/10.pdf, id=241, 359.3425pt x 213.79875pt>
-File: figures/10.pdf Graphic file (type pdf)
-<use figures/10.pdf>
-Package pdftex.def Info: figures/10.pdf  used on input line 426.
-(pdftex.def)             Requested size: 122.704pt x 73.00378pt.
-<figures/11.pdf, id=242, 359.3425pt x 213.79875pt>
-File: figures/11.pdf Graphic file (type pdf)
-<use figures/11.pdf>
-Package pdftex.def Info: figures/11.pdf  used on input line 431.
-(pdftex.def)             Requested size: 122.704pt x 73.00378pt.
-<figures/12.pdf, id=243, 359.3425pt x 213.79875pt>
-File: figures/12.pdf Graphic file (type pdf)
-<use figures/12.pdf>
-Package pdftex.def Info: figures/12.pdf  used on input line 436.
-(pdftex.def)             Requested size: 122.704pt x 73.00378pt.
-
-Class acmart Warning: A possible image without description on input line 438.
-
-[8.8 <./figures/1.pdf> <./figures/2.pdf
+[7.7] [8.8 <./figures/1.pdf> <./figures/2.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/2.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
@@ -1254,53 +1221,87 @@ le pdfs with page group included in a single page
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/6.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >]
-<figures/ablation/m1.pdf, id=303, 1195.46625pt x 699.61375pt>
+<figures/7.pdf, id=301, 359.3425pt x 213.79875pt>
+File: figures/7.pdf Graphic file (type pdf)
+<use figures/7.pdf>
+Package pdftex.def Info: figures/7.pdf  used on input line 418.
+(pdftex.def)             Requested size: 122.704pt x 73.00378pt.
+<figures/8.pdf, id=302, 359.3425pt x 213.79875pt>
+File: figures/8.pdf Graphic file (type pdf)
+<use figures/8.pdf>
+Package pdftex.def Info: figures/8.pdf  used on input line 423.
+(pdftex.def)             Requested size: 122.704pt x 73.00378pt.
+<figures/9.pdf, id=303, 359.3425pt x 213.79875pt>
+File: figures/9.pdf Graphic file (type pdf)
+<use figures/9.pdf>
+Package pdftex.def Info: figures/9.pdf  used on input line 428.
+(pdftex.def)             Requested size: 122.704pt x 73.00378pt.
+<figures/10.pdf, id=304, 359.3425pt x 213.79875pt>
+File: figures/10.pdf Graphic file (type pdf)
+<use figures/10.pdf>
+Package pdftex.def Info: figures/10.pdf  used on input line 434.
+(pdftex.def)             Requested size: 122.704pt x 73.00378pt.
+<figures/11.pdf, id=305, 359.3425pt x 213.79875pt>
+File: figures/11.pdf Graphic file (type pdf)
+<use figures/11.pdf>
+Package pdftex.def Info: figures/11.pdf  used on input line 439.
+(pdftex.def)             Requested size: 122.704pt x 73.00378pt.
+<figures/12.pdf, id=306, 359.3425pt x 213.79875pt>
+File: figures/12.pdf Graphic file (type pdf)
+<use figures/12.pdf>
+Package pdftex.def Info: figures/12.pdf  used on input line 444.
+(pdftex.def)             Requested size: 122.704pt x 73.00378pt.
+
+
+Class acmart Warning: A possible image without description on input line 446.
+
+<figures/ablation/m1.pdf, id=308, 1195.46625pt x 699.61375pt>
 File: figures/ablation/m1.pdf Graphic file (type pdf)
 <use figures/ablation/m1.pdf>
-Package pdftex.def Info: figures/ablation/m1.pdf  used on input line 452.
+Package pdftex.def Info: figures/ablation/m1.pdf  used on input line 460.
 (pdftex.def)             Requested size: 197.91124pt x 115.8156pt.
-<figures/ablation/m2.pdf, id=304, 1183.42125pt x 701.62125pt>
+<figures/ablation/m2.pdf, id=309, 1183.42125pt x 701.62125pt>
 File: figures/ablation/m2.pdf Graphic file (type pdf)
 <use figures/ablation/m2.pdf>
-Package pdftex.def Info: figures/ablation/m2.pdf  used on input line 457.
+Package pdftex.def Info: figures/ablation/m2.pdf  used on input line 465.
 (pdftex.def)             Requested size: 197.91124pt x 117.33626pt.
 
-Overfull \hbox (5.55553pt too wide) in paragraph at lines 452--458
+Overfull \hbox (5.55553pt too wide) in paragraph at lines 460--466
  [][]|  [][] 
  []
 
-<figures/ablation/m3.pdf, id=305, 1187.43625pt x 670.505pt>
+<figures/ablation/m3.pdf, id=310, 1187.43625pt x 670.505pt>
 File: figures/ablation/m3.pdf Graphic file (type pdf)
 <use figures/ablation/m3.pdf>
-Package pdftex.def Info: figures/ablation/m3.pdf  used on input line 462.
+Package pdftex.def Info: figures/ablation/m3.pdf  used on input line 470.
 (pdftex.def)             Requested size: 197.91124pt x 111.75397pt.
-<figures/ablation/m4.pdf, id=306, 1207.51125pt x 673.51625pt>
+<figures/ablation/m4.pdf, id=311, 1207.51125pt x 673.51625pt>
 File: figures/ablation/m4.pdf Graphic file (type pdf)
 <use figures/ablation/m4.pdf>
-Package pdftex.def Info: figures/ablation/m4.pdf  used on input line 467.
+Package pdftex.def Info: figures/ablation/m4.pdf  used on input line 475.
 (pdftex.def)             Requested size: 197.91124pt x 110.38544pt.
 
-Overfull \hbox (5.55553pt too wide) in paragraph at lines 462--468
+Overfull \hbox (5.55553pt too wide) in paragraph at lines 470--476
  [][]|  [][] 
  []
 
-<figures/ablation/m5.pdf, id=307, 1216.545pt x 702.625pt>
+<figures/ablation/m5.pdf, id=312, 1216.545pt x 702.625pt>
 File: figures/ablation/m5.pdf Graphic file (type pdf)
 <use figures/ablation/m5.pdf>
-Package pdftex.def Info: figures/ablation/m5.pdf  used on input line 472.
+Package pdftex.def Info: figures/ablation/m5.pdf  used on input line 480.
 (pdftex.def)             Requested size: 197.91124pt x 114.2985pt.
-<figures/ablation/m6.pdf, id=308, 1175.39125pt x 699.61375pt>
+<figures/ablation/m6.pdf, id=313, 1175.39125pt x 699.61375pt>
 File: figures/ablation/m6.pdf Graphic file (type pdf)
 <use figures/ablation/m6.pdf>
-Package pdftex.def Info: figures/ablation/m6.pdf  used on input line 477.
+Package pdftex.def Info: figures/ablation/m6.pdf  used on input line 485.
 (pdftex.def)             Requested size: 197.91124pt x 117.80118pt.
 
-Overfull \hbox (5.55553pt too wide) in paragraph at lines 472--478
+Overfull \hbox (5.55553pt too wide) in paragraph at lines 480--486
  [][]|  [][] 
  []
 
 
-Class acmart Warning: A possible image without description on input line 480.
+Class acmart Warning: A possible image without description on input line 488.
 
 [9.9 <./figures/7.pdf> <./figures/8.pdf
 
@@ -1345,71 +1346,69 @@ on: multiple pdfs with page group included in a single page
 >] (./sample-acmsmall.bbl
 LaTeX Info: Redefining \tempurl on input line 60.
 LaTeX Info: Redefining \tempurl on input line 72.
+ [11.11]
 LaTeX Info: Redefining \tempurl on input line 84.
 LaTeX Info: Redefining \tempurl on input line 96.
-LaTeX Info: Redefining \tempurl on input line 108.
-LaTeX Info: Redefining \tempurl on input line 127.
-LaTeX Info: Redefining \tempurl on input line 144.
-LaTeX Info: Redefining \tempurl on input line 159.
-LaTeX Info: Redefining \tempurl on input line 175.
-LaTeX Info: Redefining \tempurl on input line 203.
- [11.11]
-LaTeX Info: Redefining \tempurl on input line 219.
-LaTeX Info: Redefining \tempurl on input line 232.
+LaTeX Info: Redefining \tempurl on input line 115.
+LaTeX Info: Redefining \tempurl on input line 132.
+LaTeX Info: Redefining \tempurl on input line 147.
+LaTeX Info: Redefining \tempurl on input line 161.
+LaTeX Info: Redefining \tempurl on input line 177.
+LaTeX Info: Redefining \tempurl on input line 205.
+LaTeX Info: Redefining \tempurl on input line 221.
+LaTeX Info: Redefining \tempurl on input line 234.
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--235
+Underfull \hbox (badness 10000) in paragraph at lines 227--237
 []\OT1/cmr/m/n/8 (+20) Jonathan Hui. 2018.  Neu-ral Tur-ing Ma-chines: a fun-da
 -men-tal ap-proach to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--235
+Underfull \hbox (badness 10000) in paragraph at lines 227--237
 \OT1/cmr/m/n/8 (+20) ac-cess mem-ory in deep learn-ing.    []$https : / / mediu
 m . com / @jonathan[]hui /
  []
 
-LaTeX Info: Redefining \tempurl on input line 248.
-LaTeX Info: Redefining \tempurl on input line 266.
-LaTeX Info: Redefining \tempurl on input line 282.
-LaTeX Info: Redefining \tempurl on input line 299.
-LaTeX Info: Redefining \tempurl on input line 315.
-LaTeX Info: Redefining \tempurl on input line 332.
-LaTeX Info: Redefining \tempurl on input line 344.
-LaTeX Info: Redefining \tempurl on input line 357.
+LaTeX Info: Redefining \tempurl on input line 250.
+LaTeX Info: Redefining \tempurl on input line 268.
+LaTeX Info: Redefining \tempurl on input line 284.
+LaTeX Info: Redefining \tempurl on input line 301.
+LaTeX Info: Redefining \tempurl on input line 317.
+LaTeX Info: Redefining \tempurl on input line 334.
+LaTeX Info: Redefining \tempurl on input line 346.
+LaTeX Info: Redefining \tempurl on input line 359.
+LaTeX Info: Redefining \tempurl on input line 372.
 )
-
-Package natbib Warning: There were undefined citations.
-
 
 Class acmart Warning: Some images may lack descriptions.
 
 [12.12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 509.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 509.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 517.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 517.
  (./sample-acmsmall.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 509.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 509.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 517.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 517.
 Package rerunfilecheck Info: File `sample-acmsmall.out' has not changed.
-(rerunfilecheck)             Checksum: D40B0F19F2606096DC282A2D529C172B;1939.
+(rerunfilecheck)             Checksum: E30680E922E6129F0C8A5105B7B19DBD;1939.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 27401 strings out of 494485
- 446179 string characters out of 6175792
+ 27423 strings out of 494485
+ 446493 string characters out of 6175792
  737811 words of memory out of 5000000
- 30323 multiletter control sequences out of 15000+600000
- 546081 words of font info for 137 fonts, out of 8000000 for 9000
+ 30338 multiletter control sequences out of 15000+600000
+ 547019 words of font info for 141 fonts, out of 8000000 for 9000
  220 hyphenation exceptions out of 8191
- 60i,12n,94p,1355b,1273s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,12n,94p,1350b,1273s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
@@ -1423,10 +1422,10 @@ xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive
 onts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmtt9.pfb>
-Output written on sample-acmsmall.pdf (12 pages, 2155438 bytes).
+Output written on sample-acmsmall.pdf (12 pages, 2165829 bytes).
 PDF statistics:
- 1698 PDF objects out of 1728 (max. 8388607)
- 1002 compressed objects within 11 object streams
- 119 named destinations out of 1000 (max. 500000)
- 23793 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 1709 PDF objects out of 1728 (max. 8388607)
+ 1010 compressed objects within 11 object streams
+ 121 named destinations out of 1000 (max. 500000)
+ 23286 words of extra memory for PDF output out of 24883 (max. 10000000)
 
