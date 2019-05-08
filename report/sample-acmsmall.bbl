@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{11}
+\begin{thebibliography}{21}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -49,6 +49,16 @@
 \tempurl}
 
 
+\bibitem[\protect\citeauthoryear{??}{col}{[n.d.]}]%
+        {collier}
+ \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \showarticletitle{Implementing Neural Turing Machines,
+  author={Collier, Mark and Beel, Joeran}, journal={International Conference on
+  Artificial Neural Networks, ICANN.}, year={2018}}.
+\newblock  (\bibinfo{year}{[n.\,d.]}).
+\newblock
+
+
 \bibitem[\protect\citeauthoryear{??}{jsn}{[n.d.]}]%
         {jsnice3}
  \bibinfo{year}{[n.d.]}\natexlab{}.
@@ -70,6 +80,42 @@
 \newblock
 \urldef\tempurl%
 \url{https://jsnice.org}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{??}{sri}{[n.d.]}]%
+        {srilab}
+ \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \bibinfo{title}{Secure, Reliable, and Intelligent Systems Lab}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://www.sri.inf.ethz.ch/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{??}{unm}{[n.d.]}]%
+        {unminify}
+ \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \bibinfo{title}{Unminify}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://unminify.com/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{??}{pym}{2019}]%
+        {pyminify}
+ \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{python-minifier}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://pypi.org/project/python-minifier/}
 \showURL{%
 \tempurl}
 
@@ -126,6 +172,33 @@
 \tempurl}
 
 
+\bibitem[\protect\citeauthoryear{Graves, Wayne, Reynolds, Harley, Danihelka,
+  Grabska-Barwińska, Gómez, Grefenstette, Ramalho, Agapiou,
+  Puigdomènech~Badia, Moritz~Hermann, Zwols, Ostrovski, Cain, King,
+  Summerfield, Blunsom, Kavukcuoglu, and Hassabis}{Graves
+  et~al\mbox{.}}{2016}]%
+        {dnc}
+\bibfield{author}{\bibinfo{person}{Alex Graves}, \bibinfo{person}{Greg Wayne},
+  \bibinfo{person}{Malcolm Reynolds}, \bibinfo{person}{Tim Harley},
+  \bibinfo{person}{Ivo Danihelka}, \bibinfo{person}{Agnieszka
+  Grabska-Barwińska}, \bibinfo{person}{Sergio Gómez}, \bibinfo{person}{Edward
+  Grefenstette}, \bibinfo{person}{Tiago Ramalho}, \bibinfo{person}{John
+  Agapiou}, \bibinfo{person}{Adrià Puigdomènech~Badia}, \bibinfo{person}{Karl
+  Moritz~Hermann}, \bibinfo{person}{Yori Zwols}, \bibinfo{person}{Georg
+  Ostrovski}, \bibinfo{person}{Adam Cain}, \bibinfo{person}{Helen King},
+  \bibinfo{person}{Christopher Summerfield}, \bibinfo{person}{Phil Blunsom},
+  \bibinfo{person}{Koray Kavukcuoglu}, {and} \bibinfo{person}{Demis Hassabis}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Hybrid computing using a neural network with
+  dynamic external memory}.
+\newblock \bibinfo{journal}{\emph{Nature}}  \bibinfo{volume}{538}
+  (\bibinfo{date}{10} \bibinfo{year}{2016}).
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1038/nature20101}
+\showDOI{\tempurl}
+
+
 \bibitem[\protect\citeauthoryear{Hochreiter and Schmidhuber}{Hochreiter and
   Schmidhuber}{1997}]%
         {lstm}
@@ -140,6 +213,20 @@
 \urldef\tempurl%
 \url{https://doi.org/10.1162/neco.1997.9.8.1735}
 \showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Hui}{Hui}{2018}]%
+        {ntm2}
+\bibfield{author}{\bibinfo{person}{Jonathan Hui}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \bibinfo{title}{Neural Turing Machines: a fundamental approach to
+  access memory in deep learning}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://medium.com/@jonathan_hui/neural-turing-machines-a-fundamental-approach-to-access-memory-in-deep-learning-b823a31fe91d}
+\showURL{%
+\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Jiang}{Jiang}{2018}]%
@@ -170,6 +257,34 @@
   \bibinfo{institution}{University of Washington Department of Computer Science
   and Engineering}, \bibinfo{address}{Seattle, WA, USA}.
 \newblock
+
+
+\bibitem[\protect\citeauthoryear{P.~Neto, Siegelmann, and Costa}{P.~Neto
+  et~al\mbox{.}}{2019}]%
+        {neto}
+\bibfield{author}{\bibinfo{person}{J P.~Neto}, \bibinfo{person}{Hava
+  Siegelmann}, {and} \bibinfo{person}{José Costa}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{On the Implementation of Programming Languages with
+  Neural Nets}.
+\newblock  (\bibinfo{date}{05} \bibinfo{year}{2019}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Raychev, Vechev, and Krause}{Raychev
+  et~al\mbox{.}}{2015}]%
+        {jsnice2}
+\bibfield{author}{\bibinfo{person}{Veselin Raychev}, \bibinfo{person}{Martin
+  Vechev}, {and} \bibinfo{person}{Andreas Krause}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Predicting Program Properties from "Big Code"}.
+\newblock \bibinfo{journal}{\emph{SIGPLAN Not.}} \bibinfo{volume}{50},
+  \bibinfo{number}{1} (\bibinfo{year}{2015}), \bibinfo{pages}{111--124}.
+\newblock
+\showISSN{0362-1340}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/2775051.2677009}
+\showDOI{\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Raychev, Vechev, and Krause}{Raychev
@@ -203,6 +318,32 @@
 \urldef\tempurl%
 \url{https://doi.org/10.1145/2666356.2594321}
 \showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Schaeffer}{Schaeffer}{[n.d.]}]%
+        {ntm1}
+\bibfield{author}{\bibinfo{person}{Rylan Schaeffer}.}
+  \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \bibinfo{title}{Neural Turing Machine}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://rylanschaeffer.github.io/content/research/neural_turing_machine/main.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Sweeney}{Sweeney}{2011}]%
+        {tokenizer}
+\bibfield{author}{\bibinfo{person}{Mike Sweeney}.}
+  \bibinfo{year}{2011}\natexlab{}.
+\newblock \bibinfo{title}{Extracting structured text or code}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://code.activestate.com/recipes/577700-extracting-structured-text-or-code/}
+\showURL{%
+\tempurl}
 
 
 \end{thebibliography}
