@@ -5,7 +5,6 @@ The style file: ACM-Reference-Format.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: acmart.bib
-Warning--I didn't find a database entry for "nice2predict"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--no key, author in jsnice3
 Warning--no author, editor, organization, or key in jsnice3
@@ -64,7 +63,7 @@ Warning--no number and no volume in neto
 Warning--empty year in ntm1
 You've used 22 entries,
             5719 wiz_defined-function locations,
-            1433 strings with 18513 characters,
+            1432 strings with 18501 characters,
 and the built_in function-call counts, 22349 in all, are:
 = -- 2728
 > -- 807
@@ -103,4 +102,4 @@ warning$ -- 51
 while$ -- 118
 width$ -- 0
 write$ -- 485
-(There were 52 warnings)
+(There were 51 warnings)

@@ -282,12 +282,14 @@ Finally, the add vector $a_t$ is used to perform the add operation on the interm
 M_t(i) \longleftarrow \tilde{M}_t(i)+w_t(i)a_t
 \end{equation}
 
+A detailed diagram of NTM showing all the inroduced components is pictured in Fig. \ref{fig:ntmarchdet}.
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.15]{figures/ntm}
 	\caption{Detailed Neural Turing Machine architecture with an LSTM controller where $x$ is input, $y$ is output, and $h$ indicates hidden state \cite{ntml}.}
 	\Description{Neural Turing Machine architecture \cite{}.}
-	\label{fig:ntmarch}
+	\label{fig:ntmarchdet}
 \end{figure}
 
 \subsubsection{Addressing}
@@ -316,7 +318,7 @@ Finally, a scalar $\gamma$ is used for sharpening the final weighting and preven
 w_t(i) \longleftarrow {\tilde{w}_t(i)^{\gamma_t}} \over {\sum_{j} \tilde{w}_t(j)^{\gamma_t}}
 \end{equation}
 
-Figure \ref{fig:ntmaddressing} shows the flow of addressing mechanism \cite{ntm,ntm1,ntm2}.
+Fig. \ref{fig:ntmaddressing} shows the flow of addressing mechanism \cite{ntm,ntm1,ntm2}.
 
 \begin{figure}[h]
 	\centering

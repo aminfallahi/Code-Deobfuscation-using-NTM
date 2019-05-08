@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.4.28)  8 MAY 2019 13:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.4.28)  8 MAY 2019 14:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -875,9 +875,6 @@ Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 102
 Excluding comment 'screenonly' Include comment 'printonly'
 Include comment 'anonsuppress' (./sample-acmsmall.aux
 
-LaTeX Warning: Label `fig:ntmarch' multiply defined.
-
-
 LaTeX Warning: Label `fig:Total_scatter' multiply defined.
 
 
@@ -1149,56 +1146,56 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10> not available
 <figures/ntm.png, id=180, 1634.105pt x 945.5325pt>
 File: figures/ntm.png Graphic file (type png)
 <use figures/ntm.png>
-Package pdftex.def Info: figures/ntm.png  used on input line 287.
+Package pdftex.def Info: figures/ntm.png  used on input line 289.
 (pdftex.def)             Requested size: 245.10518pt x 141.82375pt.
 
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 298.
+(amsmath)                 on input line 300.
 
 <figures/ntmaddressing.png, id=187, 2308.625pt x 933.4875pt>
 File: figures/ntmaddressing.png Graphic file (type png)
 <use figures/ntmaddressing.png>
-Package pdftex.def Info: figures/ntmaddressing.png  used on input line 323.
+Package pdftex.def Info: figures/ntmaddressing.png  used on input line 325.
 (pdftex.def)             Requested size: 346.27881pt x 140.01707pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5.5 <./figures/ntm.png (PNG copy)>] [6.6 <./figures/ntmaddressing.png>]
-<figures/1.pdf, id=228, 323.2075pt x 206.7725pt>
+<figures/1.pdf, id=229, 323.2075pt x 206.7725pt>
 File: figures/1.pdf Graphic file (type pdf)
 <use figures/1.pdf>
-Package pdftex.def Info: figures/1.pdf  used on input line 353.
+Package pdftex.def Info: figures/1.pdf  used on input line 355.
 (pdftex.def)             Requested size: 122.704pt x 78.49864pt.
-<figures/2.pdf, id=229, 323.2075pt x 206.7725pt>
+<figures/2.pdf, id=230, 323.2075pt x 206.7725pt>
 File: figures/2.pdf Graphic file (type pdf)
 <use figures/2.pdf>
-Package pdftex.def Info: figures/2.pdf  used on input line 358.
+Package pdftex.def Info: figures/2.pdf  used on input line 360.
 (pdftex.def)             Requested size: 122.704pt x 78.49864pt.
-<figures/3.pdf, id=230, 323.2075pt x 206.7725pt>
+<figures/3.pdf, id=231, 323.2075pt x 206.7725pt>
 File: figures/3.pdf Graphic file (type pdf)
 <use figures/3.pdf>
-Package pdftex.def Info: figures/3.pdf  used on input line 363.
+Package pdftex.def Info: figures/3.pdf  used on input line 365.
 (pdftex.def)             Requested size: 122.704pt x 78.49864pt.
-<figures/4.pdf, id=231, 323.2075pt x 206.7725pt>
+<figures/4.pdf, id=232, 323.2075pt x 206.7725pt>
 File: figures/4.pdf Graphic file (type pdf)
 <use figures/4.pdf>
-Package pdftex.def Info: figures/4.pdf  used on input line 369.
+Package pdftex.def Info: figures/4.pdf  used on input line 371.
 (pdftex.def)             Requested size: 122.704pt x 78.49864pt.
-<figures/5.pdf, id=232, 323.2075pt x 206.7725pt>
+<figures/5.pdf, id=233, 323.2075pt x 206.7725pt>
 File: figures/5.pdf Graphic file (type pdf)
 <use figures/5.pdf>
-Package pdftex.def Info: figures/5.pdf  used on input line 374.
+Package pdftex.def Info: figures/5.pdf  used on input line 376.
 (pdftex.def)             Requested size: 122.704pt x 78.49864pt.
-<figures/6.pdf, id=233, 323.2075pt x 206.7725pt>
+<figures/6.pdf, id=234, 323.2075pt x 206.7725pt>
 File: figures/6.pdf Graphic file (type pdf)
 <use figures/6.pdf>
-Package pdftex.def Info: figures/6.pdf  used on input line 379.
+Package pdftex.def Info: figures/6.pdf  used on input line 381.
 (pdftex.def)             Requested size: 122.704pt x 78.49864pt.
 
 
-Class acmart Warning: A possible image without description on input line 381.
+Class acmart Warning: A possible image without description on input line 383.
 
 [7.7] [8.8 <./figures/1.pdf> <./figures/2.pdf
 
@@ -1221,87 +1218,87 @@ le pdfs with page group included in a single page
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/6.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >]
-<figures/7.pdf, id=301, 359.3425pt x 213.79875pt>
+<figures/7.pdf, id=302, 359.3425pt x 213.79875pt>
 File: figures/7.pdf Graphic file (type pdf)
 <use figures/7.pdf>
-Package pdftex.def Info: figures/7.pdf  used on input line 418.
+Package pdftex.def Info: figures/7.pdf  used on input line 420.
 (pdftex.def)             Requested size: 122.704pt x 73.00378pt.
-<figures/8.pdf, id=302, 359.3425pt x 213.79875pt>
+<figures/8.pdf, id=303, 359.3425pt x 213.79875pt>
 File: figures/8.pdf Graphic file (type pdf)
 <use figures/8.pdf>
-Package pdftex.def Info: figures/8.pdf  used on input line 423.
+Package pdftex.def Info: figures/8.pdf  used on input line 425.
 (pdftex.def)             Requested size: 122.704pt x 73.00378pt.
-<figures/9.pdf, id=303, 359.3425pt x 213.79875pt>
+<figures/9.pdf, id=304, 359.3425pt x 213.79875pt>
 File: figures/9.pdf Graphic file (type pdf)
 <use figures/9.pdf>
-Package pdftex.def Info: figures/9.pdf  used on input line 428.
+Package pdftex.def Info: figures/9.pdf  used on input line 430.
 (pdftex.def)             Requested size: 122.704pt x 73.00378pt.
-<figures/10.pdf, id=304, 359.3425pt x 213.79875pt>
+<figures/10.pdf, id=305, 359.3425pt x 213.79875pt>
 File: figures/10.pdf Graphic file (type pdf)
 <use figures/10.pdf>
-Package pdftex.def Info: figures/10.pdf  used on input line 434.
+Package pdftex.def Info: figures/10.pdf  used on input line 436.
 (pdftex.def)             Requested size: 122.704pt x 73.00378pt.
-<figures/11.pdf, id=305, 359.3425pt x 213.79875pt>
+<figures/11.pdf, id=306, 359.3425pt x 213.79875pt>
 File: figures/11.pdf Graphic file (type pdf)
 <use figures/11.pdf>
-Package pdftex.def Info: figures/11.pdf  used on input line 439.
+Package pdftex.def Info: figures/11.pdf  used on input line 441.
 (pdftex.def)             Requested size: 122.704pt x 73.00378pt.
-<figures/12.pdf, id=306, 359.3425pt x 213.79875pt>
+<figures/12.pdf, id=307, 359.3425pt x 213.79875pt>
 File: figures/12.pdf Graphic file (type pdf)
 <use figures/12.pdf>
-Package pdftex.def Info: figures/12.pdf  used on input line 444.
+Package pdftex.def Info: figures/12.pdf  used on input line 446.
 (pdftex.def)             Requested size: 122.704pt x 73.00378pt.
 
 
-Class acmart Warning: A possible image without description on input line 446.
+Class acmart Warning: A possible image without description on input line 448.
 
-<figures/ablation/m1.pdf, id=308, 1195.46625pt x 699.61375pt>
+<figures/ablation/m1.pdf, id=309, 1195.46625pt x 699.61375pt>
 File: figures/ablation/m1.pdf Graphic file (type pdf)
 <use figures/ablation/m1.pdf>
-Package pdftex.def Info: figures/ablation/m1.pdf  used on input line 460.
+Package pdftex.def Info: figures/ablation/m1.pdf  used on input line 462.
 (pdftex.def)             Requested size: 197.91124pt x 115.8156pt.
-<figures/ablation/m2.pdf, id=309, 1183.42125pt x 701.62125pt>
+<figures/ablation/m2.pdf, id=310, 1183.42125pt x 701.62125pt>
 File: figures/ablation/m2.pdf Graphic file (type pdf)
 <use figures/ablation/m2.pdf>
-Package pdftex.def Info: figures/ablation/m2.pdf  used on input line 465.
+Package pdftex.def Info: figures/ablation/m2.pdf  used on input line 467.
 (pdftex.def)             Requested size: 197.91124pt x 117.33626pt.
 
-Overfull \hbox (5.55553pt too wide) in paragraph at lines 460--466
+Overfull \hbox (5.55553pt too wide) in paragraph at lines 462--468
  [][]|  [][] 
  []
 
-<figures/ablation/m3.pdf, id=310, 1187.43625pt x 670.505pt>
+<figures/ablation/m3.pdf, id=311, 1187.43625pt x 670.505pt>
 File: figures/ablation/m3.pdf Graphic file (type pdf)
 <use figures/ablation/m3.pdf>
-Package pdftex.def Info: figures/ablation/m3.pdf  used on input line 470.
+Package pdftex.def Info: figures/ablation/m3.pdf  used on input line 472.
 (pdftex.def)             Requested size: 197.91124pt x 111.75397pt.
-<figures/ablation/m4.pdf, id=311, 1207.51125pt x 673.51625pt>
+<figures/ablation/m4.pdf, id=312, 1207.51125pt x 673.51625pt>
 File: figures/ablation/m4.pdf Graphic file (type pdf)
 <use figures/ablation/m4.pdf>
-Package pdftex.def Info: figures/ablation/m4.pdf  used on input line 475.
+Package pdftex.def Info: figures/ablation/m4.pdf  used on input line 477.
 (pdftex.def)             Requested size: 197.91124pt x 110.38544pt.
 
-Overfull \hbox (5.55553pt too wide) in paragraph at lines 470--476
+Overfull \hbox (5.55553pt too wide) in paragraph at lines 472--478
  [][]|  [][] 
  []
 
-<figures/ablation/m5.pdf, id=312, 1216.545pt x 702.625pt>
+<figures/ablation/m5.pdf, id=313, 1216.545pt x 702.625pt>
 File: figures/ablation/m5.pdf Graphic file (type pdf)
 <use figures/ablation/m5.pdf>
-Package pdftex.def Info: figures/ablation/m5.pdf  used on input line 480.
+Package pdftex.def Info: figures/ablation/m5.pdf  used on input line 482.
 (pdftex.def)             Requested size: 197.91124pt x 114.2985pt.
-<figures/ablation/m6.pdf, id=313, 1175.39125pt x 699.61375pt>
+<figures/ablation/m6.pdf, id=314, 1175.39125pt x 699.61375pt>
 File: figures/ablation/m6.pdf Graphic file (type pdf)
 <use figures/ablation/m6.pdf>
-Package pdftex.def Info: figures/ablation/m6.pdf  used on input line 485.
+Package pdftex.def Info: figures/ablation/m6.pdf  used on input line 487.
 (pdftex.def)             Requested size: 197.91124pt x 117.80118pt.
 
-Overfull \hbox (5.55553pt too wide) in paragraph at lines 480--486
+Overfull \hbox (5.55553pt too wide) in paragraph at lines 482--488
  [][]|  [][] 
  []
 
 
-Class acmart Warning: A possible image without description on input line 488.
+Class acmart Warning: A possible image without description on input line 490.
 
 [9.9 <./figures/7.pdf> <./figures/8.pdf
 
@@ -1383,11 +1380,11 @@ LaTeX Info: Redefining \tempurl on input line 372.
 Class acmart Warning: Some images may lack descriptions.
 
 [12.12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 517.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 517.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 519.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 519.
  (./sample-acmsmall.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 517.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 517.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 519.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 519.
 Package rerunfilecheck Info: File `sample-acmsmall.out' has not changed.
 (rerunfilecheck)             Checksum: E30680E922E6129F0C8A5105B7B19DBD;1939.
 
@@ -1396,10 +1393,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 27423 strings out of 494485
- 446493 string characters out of 6175792
+ 27424 strings out of 494485
+ 446509 string characters out of 6175792
  737811 words of memory out of 5000000
- 30338 multiletter control sequences out of 15000+600000
+ 30339 multiletter control sequences out of 15000+600000
  547019 words of font info for 141 fonts, out of 8000000 for 9000
  220 hyphenation exceptions out of 8191
  60i,12n,94p,1350b,1273s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1422,10 +1419,10 @@ xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive
 onts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmtt9.pfb>
-Output written on sample-acmsmall.pdf (12 pages, 2165829 bytes).
+Output written on sample-acmsmall.pdf (12 pages, 2165881 bytes).
 PDF statistics:
- 1709 PDF objects out of 1728 (max. 8388607)
- 1010 compressed objects within 11 object streams
+ 1710 PDF objects out of 1728 (max. 8388607)
+ 1011 compressed objects within 11 object streams
  121 named destinations out of 1000 (max. 500000)
  23286 words of extra memory for PDF output out of 24883 (max. 10000000)
 
