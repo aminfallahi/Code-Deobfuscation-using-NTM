@@ -176,7 +176,7 @@ class CopyTaskData:
         #print(bit_errors)
         #print("********")
         #print(num_seq)
-        print("error percent=",bit_errors/2560)
+        #print("error percent=",bit_errors/2560)
         return bit_errors/num_seq
 
 class RepeatCopyTaskData:

@@ -55,7 +55,7 @@ parser.add_argument('--add_noise_sequence', type=float, default=0, help='percent
 parser.add_argument('--add_noise_batch', type=float, default=0, help='percent of noise in each batch in input')
 
 #logfilename
-parser.add_argument('--log_file_name', type=str, required=True)
+parser.add_argument('--log_file_name', type=str, required=False, default="default")
 
 
 args = parser.parse_args()
